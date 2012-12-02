@@ -87,7 +87,8 @@ public class Queue{
 			return false;
 		}
 		Link previous = null;
-		for(Link node = head; node != null; node = node.next){
+		Link node;
+		for(node = head; node != null; node = node.next){
 			if(node.getPCB().getPID()==PID){
 				//We found it
 				break;
@@ -103,7 +104,14 @@ public class Queue{
 			tail = head == null ? null : tail;
 			return true;
 		}else{
-			
+			if(node.next == null){
+				//Removing the tail
+				tail = previous;
+				previous.next = null;
+			}else{
+				previous.next = node.next;
+			}
+			return true;
 		}
 	}
 
