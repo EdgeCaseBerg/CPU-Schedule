@@ -40,7 +40,9 @@ public class Queue{
 		}else{
 			//Update list
 			Link newHead = new Link(pcb,head);
+			Link temp = head;
 			head = newHead;
+			head.next = temp;
 		}
 	}
 
@@ -87,8 +89,8 @@ public class Queue{
 			return false;
 		}
 		Link previous = null;
-		Link node;
-		for(node = head; node != null; node = node.next){
+		Link node = head;
+		for(node != null; node = node.next){
 			if(node.getPCB().getPID()==PID){
 				//We found it
 				break;
@@ -112,6 +114,26 @@ public class Queue{
 				previous.next = node.next;
 			}
 			return true;
+		}
+	}
+
+	/**
+	*Inserts the pcb before the specified PID in the queue. if the PID is not found then the pcb is just enqueued.
+	*/
+	public void insertBefore(int PID,ProcessControlBlock pcb){
+		//Check for null list
+		if(empty()){return;
+		}else{
+			Link previous = null;
+			for(node = head; node != null; node = node.next){
+				if(node.getPCB().getPID()==PID){
+					//found it!
+					if(previous ==null){
+						//Insert before the head
+
+					}
+				}
+			}
 		}
 	}
 
