@@ -52,4 +52,10 @@ public class ProcessControlBlock{
 		pState = State.READY;
 	}
 
+	public int getPID(){
+		return pNumber;
+	}
+
+
+
 }

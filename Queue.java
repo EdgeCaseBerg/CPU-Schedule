@@ -68,16 +68,37 @@ public class Queue{
 			//No structure exists
 			return null;
 		}else{
-			//Go find the new tail:
-			Link node;
-			for(node = head; node.next != tail && node.next != null; node = node.next){}
-			//Save the old tail (the dequeued process)
-			Link temp = tail;
-			//Assigned the new one
-			tail = node;
-			//Detach the old link
-			tail.next = null;
+			//Save the old head
+			Link temp = head;
+			head = head.next
+			//Handle degenerate case of the list
+			tail = head == null ? null : tail;
 			return temp.getPCB();
+
+		}
+	}
+
+	/**
+	*Removes the PCB containing the process with the given PID 
+	*@param PID the id of the process
+	*@return true if the process was removed, false if the process was not found in the Queue
+	*/
+	public boolean remove(int PID){
+		if(head == null){
+			return false;
+		}
+		Link previous = null;
+		for(node = head; node != null; node = node.next){
+			if(node.getPCB().getPID()==PID){
+				//We found it
+				break;
+			}else{
+				previous = node;
+			}
+		}
+		if(previous == null){
+			//We want to remove the head:
+
 		}
 	}
 
