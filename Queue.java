@@ -2,7 +2,7 @@
 /**
 *Basic FIFO queue
 */
-public class Queue{
+public class FIFOQueue{
 	//Inner class to avoid code bloat into multiple files.
 	protected class Link{
 		private ProcessControlBlock pcb = null;
@@ -29,7 +29,7 @@ public class Queue{
 	Link head = null;
 	Link tail = null;
 
-	public Queue(){
+	public FIFOQueue(){
 	}
 
 	/**
@@ -201,7 +201,7 @@ public class Queue{
 	*/
 	public static void main(String[] args) {
 		System.out.println("Running Unit Tests on Queue");
-		Queue q = new Queue();
+		FIFOQueue q = new FIFOQueue();
 		for(int i = 0; i < 5; i++){
 			ProcessControlBlock p = new ProcessControlBlock(i);
 			if(i % 3 == 0){

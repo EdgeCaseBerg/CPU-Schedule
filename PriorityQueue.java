@@ -1,6 +1,6 @@
 
 
-public class PriorityQueue extends Queue{
+public class PriorityQueue extends FIFOQueue{
 	
 	public PriorityQueue(){
 	}
