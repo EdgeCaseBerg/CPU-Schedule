@@ -22,13 +22,13 @@ public class SJBQueue extends PriorityQueue{
 			//Create some randomly timed Process's
 			Process [] p = new Process[]{new Process(0).setBurst(gen.nextInt(1000)),
 										 new Process(1).setBurst(gen.nextInt(1000)),
-										 new Process(1).setBurst(gen.nextInt(1000))
+										 new Process(2).setBurst(gen.nextInt(1000))
 										};
 
 			//Create the PCBs
 			ProcessControlBlock [] pcbs = new ProcessControlBlock[3];
 			for(int i=0; i < 3; i++){
-				pcbs[i] = new ProcessControlBlock(p[0]).setSchedule(p[0].getBurst());
+				pcbs[i] = new ProcessControlBlock(p[i]).setSchedule(p[i].getBurst());
 				sjb.enQueue(pcbs[i]);
 			}
 
