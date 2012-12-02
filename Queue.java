@@ -48,6 +48,7 @@ public class Queue{
 		if(head == null){
 			setHead(pcb);
 		}else{
+			//Tail should never be null, but we check for it for safety
 			if(tail == null){
 				tail = new Link(pcb);
 
@@ -59,6 +60,24 @@ public class Queue{
 				tail.next = new Link(pcb);
 				tail = tail.next;
 			}
+		}
+	}
+
+	public ProcessControlBlock deQueue(){
+		if(tail == null && head == null){
+			//No structure exists
+			return null;
+		}else{
+			//Go find the new tail:
+			Link node;
+			for(node = head; node.next != tail && node.next != null; node = node.next){}
+			//Save the old tail (the dequeued process)
+			Link temp = tail;
+			//Assigned the new one
+			tail = node;
+			//Detach the old link
+			tail.next = null;
+			return temp.getPCB();
 		}
 	}
 
