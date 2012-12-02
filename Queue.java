@@ -99,7 +99,7 @@ public class Queue{
 		Link previous = null;
 		Link node = head;
 		boolean found = false;
-		for(;node.next != null; node = node.next){
+		for(;node != null && !found; node = node.next){
 			if(node.getPCB().getPID()==PID){
 				//We found it
 				found = true;
@@ -115,11 +115,13 @@ public class Queue{
 			tail = head == null ? null : tail;
 			return true;
 		}else{
+			if(!found){
+				return false;
+			}
 			if(node.next == null){
 				//Removing the tail
 				tail = previous;
 				previous.next = null;
-				return found;
 			}else{
 				previous.next = node.next;
 			}
@@ -139,7 +141,7 @@ public class Queue{
 			for(; node != null; node = node.next){
 				if(node.getPCB().getPID()==PID){
 					//found it!
-					if(previous ==null){
+					if(previous == null){
 						//Insert before the head
 						setHead(pcb);
 						//Returns for efficiency
@@ -150,6 +152,7 @@ public class Queue{
 						return;
 					}
 				}
+				previous = node;
 			}
 			//Did not find the PID in the list, adding to the queue at the end (in SJB for priority)
 			tail.next = new Link(pcb);
