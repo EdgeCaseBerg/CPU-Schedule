@@ -77,6 +77,16 @@ public class Queue{
 		}
 	}
 
+	public ProcessControlBlock find(int PID){
+		Link node = head;
+		for(;node != null; node = node.next){
+			if(node.getPCB().getPID()==PID){
+				return node.getPCB();
+			}
+		}
+		return null;
+	}
+
 	/**
 	*Removes the PCB containing the process with the given PID 
 	*@param PID the id of the process
@@ -100,7 +110,6 @@ public class Queue{
 		}
 		if(previous == null){
 			//We want to remove the head of  list
-			Link temp = head;
 			head = head.next;
 			//Handle case where list was 1 thing long
 			tail = head == null ? null : tail;
@@ -154,8 +163,45 @@ public class Queue{
 
 	public void printQueue(){
 		for(Link node = head; node != null; node = node.next){
-			System.out.println("PID: " + node.getPCB().getPID() + " STATE: " + node.getPCB().getState() );
+			System.out.println(node.getPCB());
 		}
+	}
+
+	/**
+	*Unit Test.
+	*/
+	public static void main(String[] args) {
+		System.out.println("Running Unit Tests on Queue");
+		Queue q = new Queue();
+		for(int i = 0; i < 5; i++){
+			ProcessControlBlock p = new ProcessControlBlock(i);
+			if(i % 3 == 0){
+				//Just messing with some state
+				p.doIO();
+			}
+			q.enQueue(p);
+		}
+		q.printQueue();
+		System.out.println("Queue is not empty: " + !q.empty());
+		System.out.println("Setting new head: ");
+		q.setHead(new ProcessControlBlock(11).changeStateTo(State.RUNNING));
+		q.printQueue();
+		System.out.println("Attempting to find non existent pcb: " + q.find(45));
+		System.out.println("Finding PCB with PID 3: " + q.find(3));
+		System.out.println("Dequeue: " + q.deQueue());
+		System.out.println("Printing Queue");
+		q.printQueue();
+		System.out.println("Enqueing PID 7: ");
+		q.enQueue(new ProcessControlBlock(7));
+		System.out.println("Printing Queue");
+		q.printQueue();
+		System.out.println("Inserting before 7 a PID 6");
+		q.insertBefore(7,new ProcessControlBlock(6));
+		System.out.println("Printing Queue");
+		q.printQueue();
+		
+		System.out.println("Unit Tests on Queue done.");
+
 	}
 
 }

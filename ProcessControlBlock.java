@@ -34,11 +34,16 @@ public class ProcessControlBlock{
 		pState = State.NEW;
 	}	
 
+	public String toString(){
+		return "PID: " + pNumber + " STATE: " + pState; 
+	}
+
 	/**
 	*Change the state of the process
 	*/
-	public void changeStateTo(State s){
+	public ProcessControlBlock changeStateTo(State s){
 		pState = s;
+		return this;
 	}
 
 	/**
