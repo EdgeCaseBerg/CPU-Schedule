@@ -57,5 +57,10 @@ public class ProcessControlBlock{
 	}
 
 
+	public State getState(){
+		return pState;
+	}
+
+
 
 }

@@ -70,11 +70,10 @@ public class Queue{
 		}else{
 			//Save the old head
 			Link temp = head;
-			head = head.next
+			head = head.next;
 			//Handle degenerate case of the list
 			tail = head == null ? null : tail;
 			return temp.getPCB();
-
 		}
 	}
 
@@ -88,7 +87,7 @@ public class Queue{
 			return false;
 		}
 		Link previous = null;
-		for(node = head; node != null; node = node.next){
+		for(Link node = head; node != null; node = node.next){
 			if(node.getPCB().getPID()==PID){
 				//We found it
 				break;
@@ -97,8 +96,24 @@ public class Queue{
 			}
 		}
 		if(previous == null){
-			//We want to remove the head:
+			//We want to remove the head of  list
+			Link temp = head;
+			head = head.next;
+			//Handle case where list was 1 thing long
+			tail = head == null ? null : tail;
+			return true;
+		}else{
+			
+		}
+	}
 
+	public boolean empty(){
+		return head == null;
+	}
+
+	public void printQueue(){
+		for(Link node = head; node != null; node = node.next){
+			System.out.println("PID: " + node.getPCB().getPID() + " STATE: " + node.getPCB().getState() );
 		}
 	}
 
