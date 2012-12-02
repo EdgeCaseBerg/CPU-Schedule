@@ -4,7 +4,7 @@
 */
 public class Queue{
 	//Inner class to avoid code bloat into multiple files.
-	private class Link{
+	protected class Link{
 		private ProcessControlBlock pcb = null;
 		public Link next = null;
 
@@ -32,7 +32,11 @@ public class Queue{
 	public Queue(){
 	}
 
-	public void setHead( ProcessControlBlock pcb ){
+	/**
+	*Adds the ProcessControlBlock to the Queue as a new Head.
+	*@param pcb The new head for the Queue.
+	*/
+	private void setHead( ProcessControlBlock pcb ){
 		if(head ==null){
 			//New Linked List
 			head = new Link(pcb);
@@ -44,6 +48,10 @@ public class Queue{
 		}
 	}
 
+	/**
+	*Adds a ProcessControlBlock to the Queue
+	*@param adds ProcessControlBlock pcb to the Quque. FIFO style.
+	*/
 	public void enQueue(ProcessControlBlock pcb){
 		if(head == null){
 			setHead(pcb);
@@ -63,6 +71,10 @@ public class Queue{
 		}
 	}
 
+	/**
+	*Returns and removes the head of the list
+	*@return The head of the list.
+	*/
 	public ProcessControlBlock deQueue(){
 		if(tail == null && head == null){
 			//No structure exists
@@ -77,6 +89,11 @@ public class Queue{
 		}
 	}
 
+	/**
+	*Finds the Process Control Block for the given PID
+	*@param PID The process id to search for in the Queue
+	*@return Returns the ProcessControlBlock with process id PID, null if not found.
+	*/
 	public ProcessControlBlock find(int PID){
 		Link node = head;
 		for(;node != null; node = node.next){
@@ -131,6 +148,8 @@ public class Queue{
 
 	/**
 	*Inserts the pcb before the specified PID in the queue. if the PID is not found then the pcb is just enqueued.
+	*@param PID The process id of the Process to insert before
+	*@param the ProcessControlBlock to insert
 	*/
 	public void insertBefore(int PID,ProcessControlBlock pcb){
 		//Check for null list
@@ -160,10 +179,17 @@ public class Queue{
 		}
 	}
 
+	/**
+	*Returns whether or not the Queue is empty.
+	*@return Returns true if the queue is empty, false otherwise.
+	*/
 	public boolean empty(){
 		return head == null;
 	}
 
+	/**
+	*Prints the Queue.
+	*/
 	public void printQueue(){
 		for(Link node = head; node != null; node = node.next){
 			System.out.println(node.getPCB());

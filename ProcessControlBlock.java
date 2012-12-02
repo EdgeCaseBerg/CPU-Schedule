@@ -35,7 +35,16 @@ public class ProcessControlBlock{
 	}	
 
 	public String toString(){
-		return "PID: " + pNumber + " STATE: " + pState; 
+		return "PID: " + pNumber + " STATE: " + pState + "SCHEDULE: " + schedule; 
+	}
+
+	public int getSchedule(){
+		return schedule;
+	}
+
+	public ProcessControlBlock setSchedule(int priority){
+		schedule = priority;
+		return this;
 	}
 
 	/**
