@@ -200,44 +200,51 @@ public class Queue{
 	*Unit Test.
 	*/
 	public static void main(String[] args) {
-		System.out.println("Running Unit Tests on Queue");
-		Queue q = new Queue();
-		for(int i = 0; i < 5; i++){
-			ProcessControlBlock p = new ProcessControlBlock(i);
-			if(i % 3 == 0){
-				//Just messing with some state
-				p.doIO();
-			}
-			q.enQueue(p);
-		}
-		q.printQueue();
-		System.out.println("Queue is not empty: " + !q.empty());
-		System.out.println("Setting new head: ");
-		q.setHead(new ProcessControlBlock(11).changeStateTo(State.RUNNING));
-		q.printQueue();
-		System.out.println("Attempting to find non existent pcb: " + q.find(45));
-		System.out.println("Finding PCB with PID 3: " + q.find(3));
-		System.out.println("Dequeue: " + q.deQueue());
-		System.out.println("Printing Queue");
-		q.printQueue();
-		System.out.println("Enqueing PID 7: ");
-		q.enQueue(new ProcessControlBlock(7));
-		System.out.println("Printing Queue");
-		q.printQueue();
-		System.out.println("Inserting before 7 a PID 6");
-		q.insertBefore(7,new ProcessControlBlock(6));
-		System.out.println("Printing Queue");
-		q.printQueue();
-		System.out.println("Trying to remove something that isn't there");
-		q.remove(67);
-		System.out.println("Printing Queue");
-		q.printQueue();
-		System.out.println("Removing PID 2 ");
-		q.remove(2);
-		System.out.println("Printing Queue");
-		q.printQueue();
-		System.out.println("Unit Tests on Queue done.");
+		try{
 
+			System.out.println("Running Unit Tests on Queue");
+			Queue q = new Queue();
+			for(int i = 0; i < 5; i++){
+				ProcessControlBlock p = new ProcessControlBlock(i);
+				if(i % 3 == 0){
+					//Just messing with some state
+					p.doIO();
+				}
+				q.enQueue(p);
+			}
+			q.printQueue();
+			System.out.println("Queue is not empty: " + !q.empty());
+			System.out.println("Setting new head: ");
+			q.setHead(new ProcessControlBlock(11).changeStateTo(State.RUNNING));
+			q.printQueue();
+			System.out.println("Attempting to find non existent pcb: " + q.find(45));
+			System.out.println("Finding PCB with PID 3: " + q.find(3));
+			System.out.println("Dequeue: " + q.deQueue());
+			System.out.println("Printing Queue");
+			q.printQueue();
+			System.out.println("Enqueing PID 7: ");
+			q.enQueue(new ProcessControlBlock(7));
+			System.out.println("Printing Queue");
+			q.printQueue();
+			System.out.println("Inserting before 7 a PID 6");
+			q.insertBefore(7,new ProcessControlBlock(6));
+			System.out.println("Printing Queue");
+			q.printQueue();
+			System.out.println("Trying to remove something that isn't there");
+			q.remove(67);
+			System.out.println("Printing Queue");
+			q.printQueue();
+			System.out.println("Removing PID 2 ");
+			q.remove(2);
+			System.out.println("Printing Queue");
+			q.printQueue();
+			System.out.println("Unit Tests on Queue done.");
+		}catch(Exception e){
+			System.out.println("Unit Test on Queue Failed");
+			for(StackTraceElement element : e.getStackTrace()){
+				System.out.println("Trace: " + element.toString());
+			}		
+		}
 	}
 
 }

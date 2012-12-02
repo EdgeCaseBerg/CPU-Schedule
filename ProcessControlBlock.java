@@ -20,7 +20,7 @@ public class ProcessControlBlock{
 	/**
 	*Scheduling parameters for use in scheduling queues. Priority for priority queues. Time left for a sjf queue etc.
 	*/
-	int schedule = -1;
+	long schedule = -1;
 	/**
 	*Start time of the process 
 	*/
@@ -34,15 +34,19 @@ public class ProcessControlBlock{
 		pState = State.NEW;
 	}	
 
+	public ProcessControlBlock(Process p){
+		this(p.PID);
+	}
+
 	public String toString(){
 		return "PID: " + pNumber + " STATE: " + pState + "SCHEDULE: " + schedule; 
 	}
 
-	public int getSchedule(){
+	public long getSchedule(){
 		return schedule;
 	}
 
-	public ProcessControlBlock setSchedule(int priority){
+	public ProcessControlBlock setSchedule(long priority){
 		schedule = priority;
 		return this;
 	}

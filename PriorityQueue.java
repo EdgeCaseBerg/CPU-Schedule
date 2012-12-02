@@ -73,27 +73,33 @@ public class PriorityQueue extends Queue{
 	*Unit Test for Priority Queue
 	*/
 	public static void main(String[] args) {
-		System.out.println("Running Unit Tests on Priority Queue");
-		PriorityQueue pq = new PriorityQueue();
+		try{
+			System.out.println("Running Unit Tests on Priority Queue");
+			PriorityQueue pq = new PriorityQueue();
 
-		System.out.println("Adding a head");
-		pq.setHead(new ProcessControlBlock(3).setSchedule(3));
-		System.out.println("Printing Queue");
-		pq.printQueue();
-		System.out.println("Adding A new head make sure priority works properly");
-		pq.setHead(new ProcessControlBlock(4).setSchedule(2));
-		System.out.println("Printing Queue");
-		pq.printQueue();
-		System.out.println("Enqueuing PID 1, priority 1");
-		pq.enQueue(new ProcessControlBlock(1).setSchedule(1));
-		pq.printQueue();
-		System.out.println("Adding ProcessControlBlock that should be at the end");
-		pq.enQueue(new ProcessControlBlock(5).setSchedule(5));
-		System.out.println("Printing Queue");
-		pq.printQueue();
+			System.out.println("Adding a head");
+			pq.setHead(new ProcessControlBlock(3).setSchedule(3));
+			System.out.println("Printing Queue");
+			pq.printQueue();
+			System.out.println("Adding A new head make sure priority works properly");
+			pq.setHead(new ProcessControlBlock(4).setSchedule(2));
+			System.out.println("Printing Queue");
+			pq.printQueue();
+			System.out.println("Enqueuing PID 1, priority 1");
+			pq.enQueue(new ProcessControlBlock(1).setSchedule(1));
+			pq.printQueue();
+			System.out.println("Adding ProcessControlBlock that should be at the end");
+			pq.enQueue(new ProcessControlBlock(5).setSchedule(5));
+			System.out.println("Printing Queue");
+			pq.printQueue();
 
-		System.out.println("End Unit Tests for Priority Queue");
-
+			System.out.println("End Unit Tests for Priority Queue");
+		}catch(Exception e){
+			System.out.println("Unit Test on Queue Failed");
+			for(StackTraceElement element : e.getStackTrace()){
+				System.out.println("Trace: " + element.toString());
+			}		
+		}
 
 
 	}
