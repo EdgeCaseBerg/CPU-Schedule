@@ -26,8 +26,8 @@ public class Queue{
 		}
 	}
 
-	Link head = null;
-	Link tail = null;
+	protected Link head = null;
+	protected Link tail = null;
 
 	public Queue(){
 	}
