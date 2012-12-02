@@ -40,9 +40,7 @@ public class Queue{
 		}else{
 			//Update list
 			Link newHead = new Link(pcb,head);
-			Link temp = head;
 			head = newHead;
-			head.next = temp;
 		}
 	}
 
@@ -90,9 +88,11 @@ public class Queue{
 		}
 		Link previous = null;
 		Link node = head;
+		boolean found = false;
 		for(node != null; node = node.next){
 			if(node.getPCB().getPID()==PID){
 				//We found it
+				found = true;
 				break;
 			}else{
 				previous = node;
@@ -110,6 +110,7 @@ public class Queue{
 				//Removing the tail
 				tail = previous;
 				previous.next = null;
+				return found;
 			}else{
 				previous.next = node.next;
 			}
