@@ -14,10 +14,6 @@ public class ProcessControlBlock{
 	*/
 	int pNumber = -1;
 	/**
-	*The program counter for execution of the program.
-	*/
-	int progCounter = 0;
-	/**
 	*Registers for the program to save it's state into. These are just defined for completeness according to page 104;
 	*/
 	Object[] registers = new Object[12];
@@ -25,5 +21,35 @@ public class ProcessControlBlock{
 	*Scheduling parameters for use in scheduling queues. Priority for priority queues. Time left for a sjf queue etc.
 	*/
 	int schedule = -1;
+	/**
+	*Start time of the process 
+	*/
+	int startTime = -1;
+
+	/**
+	*Default control block constructor
+	*/
+	public ProcessControlBlock(int PID){
+		pNumber = PID;
+		pState = State.NEW;
+	}	
+
+	/**
+	*Change the state of the process
+	*/
+	public void changeStateTo(State s){
+		pState = s;
+	}
+
+	/**
+	*Pretends to do an IO Process
+	*/
+	public void doIO(){
+		pState = State.WAITING;
+	}
+
+	public void finishIO(){
+		pState = State.READY;
+	}
 
 }
