@@ -1,6 +1,6 @@
 
 
-public class PriorityQueue extends FIFOQueue{
+public class PriorityQueue extends Queue{
 	
 	public PriorityQueue(){
 	}
@@ -10,7 +10,7 @@ public class PriorityQueue extends FIFOQueue{
 	*@param pcb The new head for the Queue.
 	*/
 	@Override
-	private void setHead( ProcessControlBlock pcb ){
+	protected void setHead( ProcessControlBlock pcb ){
 		if(head == null){
 			head = new Link(pcb);
 			tail = head;
@@ -29,12 +29,33 @@ public class PriorityQueue extends FIFOQueue{
 			setHead(pcb);
 		}else{
 			Link node;
-			for(node = head; node.next != null; node = node.next){
+			Link previous = null;
+			boolean added = false;
+			for(node = head; node != null && !added; node = node.next){
 				if(pcb.getSchedule() < node.getPCB().getSchedule() ){
-
+					if(previous == null){
+						//Adding a new head!
+						Link newLink = new Link(pcb,head);	
+						//Check for single item in list to update the tail
+						if(head.next == null){
+							tail = newLink;
+						}
+						head = newLink;
+						added = true;
+						return;
+					}else{
+						//Adding a regular item
+						previous.next = new Link(pcb,node);
+					}
 				}
+				previous = node;
 			}
-			
+			//Techinically I shouldn't have to do a boolean check becuase if I added it then I returned (refactor later)
+			if(!added){
+				//The priority is the worst
+				tail.next = new Link(pcb);
+				tail = tail.next;
+			}
 		}
 	}
 
