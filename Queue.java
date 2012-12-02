@@ -99,7 +99,7 @@ public class Queue{
 		Link previous = null;
 		Link node = head;
 		boolean found = false;
-		for(;node != null; node = node.next){
+		for(;node.next != null; node = node.next){
 			if(node.getPCB().getPID()==PID){
 				//We found it
 				found = true;
@@ -199,7 +199,14 @@ public class Queue{
 		q.insertBefore(7,new ProcessControlBlock(6));
 		System.out.println("Printing Queue");
 		q.printQueue();
-		
+		System.out.println("Trying to remove something that isn't there");
+		q.remove(67);
+		System.out.println("Printing Queue");
+		q.printQueue();
+		System.out.println("Removing PID 2 ");
+		q.remove(2);
+		System.out.println("Printing Queue");
+		q.printQueue();
 		System.out.println("Unit Tests on Queue done.");
 
 	}
