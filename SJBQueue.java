@@ -20,9 +20,9 @@ public class SJBQueue extends PriorityQueue{
 			Random gen = new Random();
 
 			//Create some randomly timed Process's
-			Process [] p = new Process[]{new Process(0).setBurst(gen.NextInt(1000)),
-										 new Process(1).setBurst(gen.NextInt(1000)),
-										 new Process(1).setBurst(gen.NextInt(1000))
+			Process [] p = new Process[]{new Process(0).setBurst(gen.nextInt(1000)),
+										 new Process(1).setBurst(gen.nextInt(1000)),
+										 new Process(1).setBurst(gen.nextInt(1000))
 										};
 
 			//Create the PCBs
