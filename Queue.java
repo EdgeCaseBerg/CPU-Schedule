@@ -32,6 +32,10 @@ public class Queue{
 	public Queue(){
 	}
 
+	public ProcessControlBlock peek(){
+		return head == null ? null : head.getPCB();
+	}
+
 	/**
 	*Adds the ProcessControlBlock to the Queue as a new Head.
 	*@param pcb The new head for the Queue.

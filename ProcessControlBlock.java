@@ -39,7 +39,7 @@ public class ProcessControlBlock{
 	}
 
 	public String toString(){
-		return "PID: " + pNumber + " STATE: " + pState + "SCHEDULE: " + schedule; 
+		return "PID: " + pNumber + " STATE: " + pState + " SCHEDULE: " + schedule; 
 	}
 
 	public long getSchedule(){
