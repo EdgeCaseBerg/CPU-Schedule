@@ -1,0 +1,225 @@
+Allocating Job with PID 0 into Process List
+Allocating Job with PID 1 into Process List
+Allocating Job with PID 2 into Process List
+Allocating Job with PID 3 into Process List
+Allocating Job with PID 4 into Process List
+Allocating Job with PID 5 into Process List
+Allocating Job with PID 6 into Process List
+Allocating Job with PID 7 into Process List
+Getting Job from Queue
+ with PID 0
+Allocating Job with PID 8 into Process List
+Scheduling new job with PID 8
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 2 Desired CPU Time (ms): 556
+Terminating Job with PID 0
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 1 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 156
+PID: 2 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 557
+PID: 3 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 119
+PID: 4 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 181
+PID: 5 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 292
+PID: 6 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 370
+PID: 7 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 583
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 2 Desired CPU Time (ms): 156
+Terminating Job with PID 1
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 2 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 557
+PID: 3 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 119
+PID: 4 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 181
+PID: 5 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 292
+PID: 6 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 370
+PID: 7 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 583
+Getting Job from Queue
+ with PID 2
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 3 Desired CPU Time (ms): 557
+2Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 3 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 119
+PID: 4 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 181
+PID: 5 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 292
+PID: 6 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 370
+PID: 7 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 583
+PID: 2 State: HALTED Actual CPU Time (ms): 5 Desired CPU Time (ms): 557
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 119
+Terminating Job with PID 3
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 4 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 181
+PID: 5 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 292
+PID: 6 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 370
+PID: 7 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 583
+PID: 2 State: HALTED Actual CPU Time (ms): 6 Desired CPU Time (ms): 557
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 181
+Terminating Job with PID 4
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 5 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 292
+PID: 6 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 370
+PID: 7 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 583
+PID: 2 State: HALTED Actual CPU Time (ms): 7 Desired CPU Time (ms): 557
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 7 Desired CPU Time (ms): 292
+Terminating Job with PID 5
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 6 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 370
+PID: 7 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 583
+PID: 2 State: HALTED Actual CPU Time (ms): 8 Desired CPU Time (ms): 557
+Getting Job from Queue
+ with PID 6
+Executing Current Job:  PID: 6 State: RUNNING Actual CPU Time (ms): 8 Desired CPU Time (ms): 370
+Terminating Job with PID 6
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 7 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 950
+PID: 8 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 583
+PID: 2 State: HALTED Actual CPU Time (ms): 9 Desired CPU Time (ms): 557
+Getting Job from Queue
+ with PID 7
+Executing Current Job:  PID: 7 State: RUNNING Actual CPU Time (ms): 9 Desired CPU Time (ms): 950
+2Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 8 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 583
+PID: 2 State: HALTED Actual CPU Time (ms): 9 Desired CPU Time (ms): 557
+PID: 7 State: HALTED Actual CPU Time (ms): 9 Desired CPU Time (ms): 950
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 8 Desired CPU Time (ms): 583
+Terminating Job with PID 8
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 2 State: HALTED Actual CPU Time (ms): 10 Desired CPU Time (ms): 557
+PID: 7 State: HALTED Actual CPU Time (ms): 10 Desired CPU Time (ms): 950
+Getting Job from Queue
+ with PID 2
+Allocating Job with PID 9 into Process List
+Scheduling new job with PID 9
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 11 Desired CPU Time (ms): 557
+Terminating Job with PID 2
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 7 State: HALTED Actual CPU Time (ms): 11 Desired CPU Time (ms): 950
+PID: 9 State: NEW Actual CPU Time (ms): 0 Desired CPU Time (ms): 310
+Getting Job from Queue
+ with PID 7
+Executing Current Job:  PID: 7 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 950
+2Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 9 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 310
+PID: 7 State: HALTED Actual CPU Time (ms): 12 Desired CPU Time (ms): 950
+Getting Job from Queue
+ with PID 9
+Allocating Job with PID 10 into Process List
+Scheduling new job with PID 10
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 2 Desired CPU Time (ms): 310
+1Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 7 State: HALTED Actual CPU Time (ms): 13 Desired CPU Time (ms): 950
+PID: 10 State: NEW Actual CPU Time (ms): 0 Desired CPU Time (ms): 419
+PID: 9 State: HALTED Actual CPU Time (ms): 2 Desired CPU Time (ms): 310
+Getting Job from Queue
+ with PID 7
+Allocating Job with PID 11 into Process List
+Scheduling new job with PID 11
+Executing Current Job:  PID: 7 State: RUNNING Actual CPU Time (ms): 14 Desired CPU Time (ms): 950
+Terminating Job with PID 7
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 10 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 419
+PID: 9 State: HALTED Actual CPU Time (ms): 3 Desired CPU Time (ms): 310
+PID: 11 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 410
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 2 Desired CPU Time (ms): 419
+Terminating Job with PID 10
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 9 State: HALTED Actual CPU Time (ms): 4 Desired CPU Time (ms): 310
+PID: 11 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 410
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 310
+Terminating Job with PID 9
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 11 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 410
+Getting Job from Queue
+ with PID 11
+Allocating Job with PID 12 into Process List
+Scheduling new job with PID 12
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 3 Desired CPU Time (ms): 410
+1Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 12 State: NEW Actual CPU Time (ms): 0 Desired CPU Time (ms): 123
+PID: 11 State: HALTED Actual CPU Time (ms): 3 Desired CPU Time (ms): 410
+Getting Job from Queue
+ with PID 12
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 0 Desired CPU Time (ms): 123
+Terminating Job with PID 12
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+PID: 11 State: HALTED Actual CPU Time (ms): 4 Desired CPU Time (ms): 410
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 4 Desired CPU Time (ms): 410
+Terminating Job with PID 11
+Current State of the CPU: 
+________________________________________
+Current State of the Process Queue:
+Printing Queue:
+Getting Job from Queue
+No More Jobs on Queue. Exiting Simulation

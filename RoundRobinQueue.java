@@ -208,15 +208,18 @@ public class RoundRobinQueue extends Queue{
 	@Override
 	public void printQueue(){
 		for(Link node = head; node != tail; node = node.next){
-			System.out.println(node.getPCB());
-		}
-		System.out.println(tail.getPCB());
+			ProcessControlBlock pcb = node.getPCB();
+			System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime() ) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState());
+		} 
+		ProcessControlBlock pcb = tail.getPCB();
+		System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime()) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState());
 	}
 
 	public static void main(String[] args) {
 		try{
 			System.out.println("Running Unit Tests on Round Robin Queue");
 			RoundRobinQueue q = new RoundRobinQueue();
+
 
 			//Random stuff for time slices
 			Random gen = new Random();

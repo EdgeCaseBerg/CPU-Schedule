@@ -13,7 +13,7 @@ public class CPU{
 	Scheduler jobScheduler;
 
 	/*
-	*List of current processes in Memory. Visivle to all
+	*List of current processes in Memory. Visible to all
 	*/
 	public static HashMap<Integer,Process> processes = new HashMap<Integer,Process>();
 
@@ -21,6 +21,31 @@ public class CPU{
 	*The current process being executed 
 	*/
 	ProcessControlBlock currentJob = null;
+
+	public static void main(String[] args) {
+		//Check for arguments
+		CPU cpu;
+		if(args.length > 0){
+			if(args[0].equals("TEST")){
+				CPU.UnitTest();
+			}
+			cpu = new CPU(args[0]);
+		}else{
+			cpu = new CPU("");
+		}
+		//Now add some starting jobs...
+		for(int i = 0; i < 8; i++){
+			Process p = cpu.newJob();
+			cpu.allocateJob(p);
+			cpu.scheduleJob(p);
+		}
+		cpu.run();
+		
+	}
+
+	public static void UnitTest(){
+		//Test everything in here!
+	}
 
 	public CPU(String schedType){
 		//Allow the user to decide from command line what the algorithm is
@@ -50,6 +75,10 @@ public class CPU{
 		return p;
 		
 	}
+	public void scheduleJob(Process p){
+		//This function is only used to add jobs at the inialization step of the simulator
+		jobScheduler.schedule(p);
+	}
 
 	public void allocateJob(Process p){
 		//Schedule the job with priority so that no matter what type of scheduler, we're covered.
@@ -71,7 +100,7 @@ public class CPU{
 		//With some probability we will do an IO and return control to CPU
 		if(rands.nextInt(1000) > 900){
 			//About a 10% chance to do an IO operation
-			System.out.println("Current job needs to perform IO. Returning control to CPU");
+			System.out.println("1Current job needs to perform IO. Returning control to CPU");
 			currentJob.doIO();
 			//Return control to CPU
 			return;
@@ -79,9 +108,9 @@ public class CPU{
 		//No IO! So now we run for a timeslice or until its done by asking:
 		if(jobScheduler.timeSlice < Long.MAX_VALUE-1){
 			//We're using round robin: Execute only for a timeslice
-			currentJob.setSchedule(currentJob.getSchedule() + jobScheduler.timeSlice);
+			currentJob.setSchedule(currentJob.getSchedule() - jobScheduler.timeSlice);
 			Process p = processes.get(currentJob.getPID());
-			if(currentJob.getSchedule() > p.getBurst()){
+			if(currentJob.getSchedule() <= 0){
 				//Job is finished
 				return;
 			}
@@ -89,29 +118,38 @@ public class CPU{
 			//We are using shortest job first, priority Queue, or FIFO
 			//We are now executing this job for a little while
 			Process p = processes.get(currentJob.getPID());
-			int runtime = currentJob.getStartTime() - System.currentTimeMillis() + rands.nextInt(p.getBurst()) + rands.nextInt(100) - rands.nextInt(100);
+			long runtime = System.currentTimeMillis() - currentJob.getStartTime()  + rands.nextInt(Math.abs((int)p.getBurst())+1) + rands.nextInt(100) - rands.nextInt(100);
 			for(int i=0; i < runtime; i++){
 				//Executing the job!
-				if(rands.nextInt(1000) > 990){
-					//1% chance to to have to do IO during execution (I do this because I dont want to sit for this program to 
+				if(rands.nextInt(1000) > 998){
+					//.01% chance to to have to do IO during execution (I do this because I dont want to sit for this program to 
 					//stop running for a very long time.)
-					System.out.println("Current job needs to perform IO. Returning control to CPU");
+					System.out.println("2Current job needs to perform IO. Returning control to CPU");
 					currentJob.doIO();
+					//Update stats with i as running time...
 					//Return control to CPU
 					return;			
 				}
 			}
 			//Execution of program is done
+			currentJob.changeStateTo(State.TERMINATED);
 		}
 	}
 
 	public void run(){
 		do{
+			System.out.println("Getting Job from Queue");
 			currentJob = jobScheduler.nextJob();
+
+
 			if(currentJob == null){
 				//No Job!
+				System.out.println("No More Jobs on Queue. Exiting Simulation");
 				break;
-			}else if(currentJob.getState()==State.WAITING){
+			}
+			System.out.println(" with PID " + currentJob.getPID());
+
+			if(currentJob.getState()==State.WAITING){
 				//If the job was waiting on IO then is it done?
 				//With some probability we change it back to be ready
 				if(rands.nextInt(1000) %  2 == 0){
@@ -140,7 +178,7 @@ public class CPU{
 						//Allocate the job into memory
 						if(newJobPriority < currentJob.getSchedule()){
 							//It is higher! so we should preempt it!
-							System.out.println("Scheduling new job with PID + " p.PID + " with higher priority than current job. PreEmpting...")
+							System.out.println("Scheduling new job with PID + " + p.PID + " with higher priority than current job. PreEmpting...");
 							jobScheduler.scheduleWithPriority(p,newJobPriority);
 							jobScheduler.scheduleWithPriority(currentJob,currentJob.getSchedule());
 							continue;
@@ -157,7 +195,7 @@ public class CPU{
 				}
 			}
 			//Actually execute the job
-			executeJob(currentJob);
+			executeJob();
 			//Did we finish the job?
 			if(currentJob.getState()==State.TERMINATED){
 				freeJob(currentJob.getPID());
@@ -166,6 +204,11 @@ public class CPU{
 				jobScheduler.scheduleWithPriority(currentJob,currentJob.getSchedule());
 			}
 			//Print out the current state of the CPU:
+			System.out.println("Current State of the CPU: ");
+			System.out.println("________________________________________");
+			System.out.println("Current State of the Process Queue:");
+			jobScheduler.printState();
+			
 		}while(currentJob != null);
 		//Done Executing
 

@@ -118,7 +118,17 @@ public class Scheduler{
 	}
 
 
+	public void printState(){
+		if(algorithm.getClass().getName().equals("RoundRobinQueue")){
+			System.out.println("Time Quantum: " + timeSlice);
+			System.out.println("Printing Queue:");
+			algorithm.printQueue();
+		}else{
+			System.out.println("Printing Queue:");
+			algorithm.printQueue();
+		}
 
+	}
 
 
 

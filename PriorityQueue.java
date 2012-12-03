@@ -70,12 +70,24 @@ public class PriorityQueue extends Queue{
 	}
 
 	/**
+	*Prints the Queue.
+	*/
+	public void printQueue(){
+		for(Link node = head; node != null; node = node.next){
+			ProcessControlBlock pcb = node.getPCB();
+			System.out.println("PID: " + pcb.getPID() + " State: " + pcb.getState() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime())  +  " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " Priority: " + pcb.getSchedule() );
+		}
+	}
+
+	/**
 	*Unit Test for Priority Queue
 	*/
 	public static void main(String[] args) {
 		try{
 			System.out.println("Running Unit Tests on Priority Queue");
 			PriorityQueue pq = new PriorityQueue();
+
+
 
 			System.out.println("Adding a head");
 			pq.setHead(new ProcessControlBlock(3).setSchedule(3));
@@ -94,7 +106,7 @@ public class PriorityQueue extends Queue{
 			pq.printQueue();
 
 			System.out.println("End Unit Tests for Priority Queue");
-			
+
 		}catch(Exception e){
 			System.out.println("Unit Test on Queue Failed");
 			for(StackTraceElement element : e.getStackTrace()){

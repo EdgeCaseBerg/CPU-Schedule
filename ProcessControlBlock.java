@@ -25,6 +25,10 @@ public class ProcessControlBlock{
 	*Start time of the process 
 	*/
 	private long startTime = -1;
+	/**
+	*Process pointer
+	*/
+	Process p;
 
 
 	/**
@@ -33,14 +37,22 @@ public class ProcessControlBlock{
 	public ProcessControlBlock(int PID){
 		pNumber = PID;
 		pState = State.NEW;
+		p = new Process(PID);
+		setStartTime(System.currentTimeMillis());
 	}	
 
 	public ProcessControlBlock(Process p){
 		this(p.PID);
+		this.p = p;
+		setStartTime(System.currentTimeMillis());
+	}
+
+	public Process getProcess(){
+		return p;
 	}
 
 	public String toString(){
-		return "PID: " + pNumber + " STATE: " + pState + " SCHEDULE: " + schedule; 
+		return "PID: " + pNumber + " State: " + pState + " Actual CPU Time (ms): " + (System.currentTimeMillis() -startTime) + " Desired CPU Time (ms): " + p.getBurst(); 
 	}
 
 	public long getSchedule(){
