@@ -94,6 +94,7 @@ public class PriorityQueue extends Queue{
 			pq.printQueue();
 
 			System.out.println("End Unit Tests for Priority Queue");
+			
 		}catch(Exception e){
 			System.out.println("Unit Test on Queue Failed");
 			for(StackTraceElement element : e.getStackTrace()){
