@@ -207,6 +207,10 @@ public class RoundRobinQueue extends Queue{
 	*/
 	@Override
 	public void printQueue(){
+		if(head == null){
+			System.out.println("Empty Queue");
+			return;
+		}
 		for(Link node = head; node != tail; node = node.next){
 			ProcessControlBlock pcb = node.getPCB();
 			System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime() ) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState());
@@ -226,7 +230,7 @@ public class RoundRobinQueue extends Queue{
 
 			for(int i = 0; i < 5; i++){
 				//Random time slices
-				ProcessControlBlock p = new ProcessControlBlock(i).setSchedule(gen.nextInt(1000));
+				ProcessControlBlock p = new ProcessControlBlock(i).setSchedule(gen.nextInt(1000)); 	
 				if(i % 3 == 0){
 					//Just messing with some state
 					p.doIO();
@@ -257,6 +261,10 @@ public class RoundRobinQueue extends Queue{
 			q.printQueue();
 			System.out.println("Removing PID 2 ");
 			q.remove(2);
+			System.out.println("Printing Queue");
+			q.printQueue();
+			System.out.println("Enqueing PID 17: ");
+			q.enQueue(new ProcessControlBlock(17));
 			System.out.println("Printing Queue");
 			q.printQueue();
 			System.out.println("Unit Tests on Round Robin Queue done.");
