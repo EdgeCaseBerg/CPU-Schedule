@@ -9,6 +9,17 @@ public class SJBQueue extends PriorityQueue{
 	//PCB, which is set to the burst time if we are using SJB. So its the CPU Schedulers job to
 	//apply the neccesary information for the SJB Queue to work.
 
+	/**
+	*Prints the Queue.
+	*/
+	@Override
+	public void printQueue(){
+		for(Link node = head; node != null; node = node.next){
+			ProcessControlBlock pcb = node.getPCB();
+			System.out.println("PID: " + pcb.getPID() + " State: " + pcb.getState() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime())  +  " Desired CPU Time (ms): " + pcb.getProcess().getBurst());
+		}
+	}
+
 	public static void main(String[] args) {
 		try{
 

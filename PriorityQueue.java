@@ -72,6 +72,7 @@ public class PriorityQueue extends Queue{
 	/**
 	*Prints the Queue.
 	*/
+	@Override
 	public void printQueue(){
 		for(Link node = head; node != null; node = node.next){
 			ProcessControlBlock pcb = node.getPCB();
