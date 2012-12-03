@@ -37,10 +37,13 @@ public class CPU{
 		for(int i = 0; i < 8; i++){
 			Process p = cpu.newJob();
 
+
 			cpu.allocateJob(p);
 			if(args.length > 0){
 				if(args[0].equals("PRIORITY") || args[0].equals("PRIORITY PREEMPTIVE")){
 					cpu.scheduleJob(p, cpu.rands.nextInt(2000));
+				}else if(args[0].equals("ROUND ROBIN")){
+					cpu.scheduleJob(p,p.getBurst());		
 				}else{
 					cpu.scheduleJob(p);		
 				}
@@ -197,8 +200,8 @@ public class CPU{
 			}else{
 				//We have a job to do!
 				//Some probabilty we get a new job coming in:
-				if(rands.nextInt(1000) > 800){
-					//About a 20% change of a new job coming in
+				if(rands.nextInt(1000) > 900){
+					//About a 10% change of a new job coming in
 					Process p = newJob();
 					allocateJob(p);
 					//Is the new job coming high priority? (Lower numbers = higher prob)

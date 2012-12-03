@@ -54,7 +54,7 @@ public class Scheduler{
 		if(algorithm.getClass().getName().equals("PriorityQueue")){
 			//Priority Queue
 			algorithm.enQueue(new ProcessControlBlock(p).setSchedule(priority));
-		}else if(algorithm.getClass().getName().equals("SJBQueue")){
+		}else if(algorithm.getClass().getName().equals("SJBQueue") || algorithm.getClass().getName().equals("RoundRobinQueue")){
 			//Queue process with burst time as its priority
 			algorithm.enQueue(new ProcessControlBlock(p).setSchedule(p.getBurst()));
 		}else{

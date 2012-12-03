@@ -213,10 +213,10 @@ public class RoundRobinQueue extends Queue{
 		}
 		for(Link node = head; node != tail; node = node.next){
 			ProcessControlBlock pcb = node.getPCB();
-			System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime() ) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState());
+			System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime() ) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState() + " Time Left: " + pcb.getSchedule());
 		} 
 		ProcessControlBlock pcb = tail.getPCB();
-		System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime()) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState());
+		System.out.println("PID: " + pcb.getPID() + " Actual CPU Time (ms): " + (System.currentTimeMillis() -pcb.getStartTime()) + " Desired CPU Time (ms): " + pcb.getProcess().getBurst() + " State: " + pcb.getState() + " Time Left: " + pcb.getSchedule());
 	}
 
 	public static void main(String[] args) {
