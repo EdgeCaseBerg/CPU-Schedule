@@ -200,7 +200,9 @@ public class CPU{
 			if(currentJob.getState()==State.TERMINATED){
 				freeJob(currentJob.getPID());
 			}else{
-				currentJob.changeStateTo(State.HALTED);
+				if(currentJob.getState()!= State.WAITING){
+					currentJob.changeStateTo(State.HALTED);	
+				}
 				jobScheduler.scheduleWithPriority(currentJob,currentJob.getSchedule());
 			}
 			//Print out the current state of the CPU:
