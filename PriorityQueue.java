@@ -45,7 +45,6 @@ public class PriorityQueue extends Queue{
 						return;
 					}else{
 						//Adding a regular item
-						System.out.println(node);
 						previous.next = new Link(pcb,node);
 						added = true;
 						return;

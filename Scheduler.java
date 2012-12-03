@@ -119,11 +119,15 @@ public class Scheduler{
 
 
 	public void printState(){
+		System.out.println("Scheduler using " + algorithm.getClass().getName() + " Type Queue Structure");
 		if(algorithm.getClass().getName().equals("RoundRobinQueue")){
 			System.out.println("Time Quantum: " + timeSlice);
 			System.out.println("Printing Queue:");
 			algorithm.printQueue();
 		}else{
+			if(algorithm.getClass().getName().equals("PriorityQueue")){
+				System.out.println("Pre-Emptive: " + preEmptive);
+			}
 			System.out.println("Printing Queue:");
 			algorithm.printQueue();
 		}
