@@ -1,4 +1,5 @@
 
+import java.util.HashMap;
 
 public class Scheduler{
 	//The scheduling algorithm that the Scheduler uses
@@ -133,6 +134,7 @@ public class Scheduler{
 		}
 
 	}
+
 
 
 

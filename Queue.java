@@ -28,6 +28,7 @@ public class Queue{
 
 	protected Link head = null;
 	protected Link tail = null;
+	public int size = 0;
 
 	public Queue(){
 	}
@@ -73,6 +74,7 @@ public class Queue{
 				tail = tail.next;
 			}
 		}
+		size++;
 	}
 
 	/**
@@ -89,6 +91,7 @@ public class Queue{
 			head = head.next;
 			//Handle degenerate case of the list
 			tail = head == null ? null : tail;
+			size--;
 			return temp.getPCB();
 		}
 	}
@@ -134,6 +137,7 @@ public class Queue{
 			head = head.next;
 			//Handle case where list was 1 thing long
 			tail = head == null ? null : tail;
+			size = 0;
 			return true;
 		}else{
 			if(!found){
@@ -146,8 +150,10 @@ public class Queue{
 			}else{
 				previous.next = node.next;
 			}
+			size--;
 			return true;
 		}
+		
 	}
 
 	/**
@@ -181,6 +187,7 @@ public class Queue{
 			tail.next = new Link(pcb);
 			tail = tail.next;
 		}
+		size++;
 	}
 
 	/**
@@ -199,6 +206,7 @@ public class Queue{
 			System.out.println(node.getPCB());
 		}
 	}
+
 
 	/**
 	*Unit Test.

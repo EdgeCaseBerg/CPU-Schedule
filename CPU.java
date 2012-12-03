@@ -12,10 +12,18 @@ public class CPU{
 
 	Scheduler jobScheduler;
 
+	long startingTime;
+
 	/*
 	*List of current processes in Memory. Visible to all
 	*/
 	public static HashMap<Integer,Process> processes = new HashMap<Integer,Process>();
+
+	/**
+	*Statistics
+	*/
+	public static HashMap<Integer,Long> turnAround = new HashMap<Integer,Long>();
+	public static HashMap<Integer,Long> waitingTime = new HashMap<Integer,Long>();
 
 	/**
 	*The current process being executed 
@@ -104,6 +112,11 @@ public class CPU{
 	}
 
 	public void freeJob(int PID){
+		//Save the stats for this process
+		//Turn around time is easy
+		turnAround.put(PID,System.currentTimeMillis() - currentJob.getStartTime() );
+		//Final computation of waiting time
+		waitingTime.put(PID,waitingTime.get(PID) - startingTime);
 		processes.remove(PID);
 		currentJob.changeStateTo(State.TERMINATED);
 		System.out.println("Terminating Job with PID " + PID);
@@ -124,6 +137,14 @@ public class CPU{
 		//No IO! So now we run for a timeslice or until its done by asking:
 		if(jobScheduler.timeSlice < Long.MAX_VALUE-1){
 			//We're using round robin: Execute only for a timeslice
+			//Update the wait time:
+			if(waitingTime.containsKey(currentJob.getPID())){
+				long waitingTimeSoFar = waitingTime.get(currentJob.getPID());
+				waitingTime.put(currentJob.getPID(), waitingTimeSoFar + (System.currentTimeMillis() - waitingTimeSoFar) );
+			}else{
+				//First computation of wait time just stammp, the computation using the CPU start time will happen after
+				waitingTime.put(currentJob.getPID(),System.currentTimeMillis());
+			}
 			currentJob.setSchedule(currentJob.getSchedule() - jobScheduler.timeSlice);
 			Process p = processes.get(currentJob.getPID());
 			if(currentJob.getSchedule() <= 0){
@@ -131,9 +152,18 @@ public class CPU{
 				currentJob.changeStateTo(State.TERMINATED);
 				return;
 			}
+			//Remove the time it takes to execute the process:
+			waitingTime.put(currentJob.getPID(), System.currentTimeMillis() - waitingTime.get(currentJob.getPID()));
 		}else{
 			//We are using shortest job first, priority Queue, or FIFO
 			//We are now executing this job for a little while
+			if(!waitingTime.containsKey(currentJob.getPID())){
+				waitingTime.put(currentJob.getPID(), System.currentTimeMillis());
+			}else{
+				//We have done IO or something so we waited a while.
+				long currentWait = waitingTime.get(currentJob.getPID());
+				waitingTime.put(currentJob.getPID(), currentWait + (System.currentTimeMillis() - currentWait));
+			}
 			Process p = processes.get(currentJob.getPID());
 			long runtime = System.currentTimeMillis() - currentJob.getStartTime()  + rands.nextInt(Math.abs((int)p.getBurst())+1) + rands.nextInt(100) - rands.nextInt(100);
 			for(int i=0; i < runtime; i++){
@@ -143,11 +173,14 @@ public class CPU{
 					//stop running for a very long time.)
 					System.out.println("Current job needs to perform IO. Returning control to CPU");
 					currentJob.doIO();
-					//Update stats with i as running time...
+					//Remove execution time from waiting time
+					waitingTime.put(currentJob.getPID(), System.currentTimeMillis() - waitingTime.get(currentJob.getPID()));
 					//Return control to CPU
 					return;			
 				}
 			}
+			//Remove execution time from the process
+			waitingTime.put(currentJob.getPID(), System.currentTimeMillis() - waitingTime.get(currentJob.getPID()));
 			//Execution of program is done
 			currentJob.changeStateTo(State.TERMINATED);
 		}
@@ -157,9 +190,10 @@ public class CPU{
 		//Print out the current state of the CPU:
 			System.out.println("Current State of the CPU: ");
 			System.out.println("________________________________________");
-			System.out.println("Process List:");
+			System.out.println("CPU Process List:");
+
 			for(Process p : processes.values() ){
-				System.out.println("PID: " + p.PID  );
+				System.out.println("PID: " + p.PID);
 			}
 			System.out.println("________________________________________");
 			System.out.println("Current State of the Process Queue:");
@@ -167,6 +201,9 @@ public class CPU{
 	}
 
 	public void run(){
+		//Figure out the starting time for waiting time computation
+		startingTime = System.currentTimeMillis();
+
 		do{
 			System.out.println("=============================================");
 			System.out.println("Getting Job from Queue");
@@ -214,6 +251,7 @@ public class CPU{
 							System.out.println("Scheduling new job with PID " + p.PID + " with higher priority than current job. PreEmpting...");
 							jobScheduler.scheduleWithPriority(p,newJobPriority);
 							jobScheduler.scheduleWithPriority(currentJob,currentJob.getSchedule());
+							
 							printStatus();
 							continue;
 						}else{
@@ -242,7 +280,21 @@ public class CPU{
 			printStatus();
 			
 		}while(currentJob != null);
-		//Done Executing
+		//Done Executing Show statistics
+		System.out.println("\nCPU Statistics:");
+		System.out.println("========================================================");
+		long avgTurn = 0;
+		long avgWait = 0;
+		for(int i=0; i < nextPID; i++){
+			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + turnAround.get(i) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
+			avgTurn += turnAround.get(i);
+			avgWait += waitingTime.get(i);
+		}
+		System.out.println("========================================================");
+		System.out.println("Averages:");
+		System.out.println("Turn Around:  " + (avgTurn/(nextPID-1)));
+		System.out.println("Waiting Time: " + (avgWait/(nextPID-1)));
+		System.out.println("========================================================");
 
 	}
 
