@@ -5,7 +5,15 @@ public class Scheduler{
 	private Queue algorithm;
 	public boolean preEmptive = false;
 	//Max value defined as timeslice at first, redefined only for Round Robin
-	public long timeSlice = Long.MAX_VALUE;
+	public long timeSlice = Long.MAX_VALUE-1;
+
+	public void removeJob(ProcessControlBlock pcb){
+		algorithm.remove(pcb.getPID());
+	}
+
+	public boolean isPreEmptive(){
+		return preEmptive;
+	}
 
 	public ProcessControlBlock handleState(ProcessControlBlock pcb){
 		if(pcb.getState()==State.TERMINATED){
@@ -39,7 +47,7 @@ public class Scheduler{
 			//PCB was in a terminated state, removed from Queue now
 			return;
 		}
-		algorithm.enQueue(pcb);
+		scheduleWithPriority(pcb,pcb.getSchedule());
 	}
 
 	public void scheduleWithPriority(Process p, long priority){
@@ -53,6 +61,19 @@ public class Scheduler{
 			//Round robin and normal Queue have no priorty but we'll set it anyway.
 			algorithm.enQueue(new ProcessControlBlock(p).setSchedule(priority));
 		}
+	}
+
+	public void scheduleWithPriority(ProcessControlBlock pcb, long priority){
+		if(pcb.getState()==State.TERMINATED){
+			algorithm.remove(pcb.getPID());
+		}else{
+			pcb = handleState(pcb);
+			//The schedule in SJB is the time remaining and in priority queues is the pririty
+			//When the CPU is done executing a job in SJB the priority passed in is the time elapsed in
+			//the execution
+			algorithm.enQueue(pcb.setSchedule(priority));
+		}
+
 	}
 
 	public ProcessControlBlock nextJob(){
@@ -90,6 +111,10 @@ public class Scheduler{
 			//Magic happens and we allocate space for the next job
 			pcb.changeStateTo(State.READY);
 		}
+	}
+
+	public void setTimeSlice(long time){
+		this.timeSlice = time;
 	}
 
 
