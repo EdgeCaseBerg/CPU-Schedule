@@ -1,5 +1,7 @@
 public class Documentation{
 	static String doc = "ETHAN ELDRIDGE PROGRAMMING ASSIGNMENT FOR CS 201 OPERATING SYSTEMS\n\n"
+					   +"You will need to compile all the java files from the command line before "
+					   +"running the Driver file. (cd to directory, javac *.java, java Driver)\n\n"
 				       +"This is an CPU Schedule Simulator using different Schedule types. The "
 					   +"Options for types of simulator are the following:\n\n"
 					   +"1. FIFO Queue Scheduling\n"
