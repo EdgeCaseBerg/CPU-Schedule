@@ -36,14 +36,12 @@ public class CPU{
 		//Check for arguments
 		CPU cpu;
 		if(args.length > 0){
-			if(args[0].equals("TEST")){
-				CPU.UnitTest();
-			}
 			cpu = new CPU(args[0]);
 		}else{
 			cpu = new CPU("");
 		}
 		//Now add some starting jobs...
+		System.out.println("Setting up Simulation with 8 starting processes");
 		for(int i = 0; i < 8; i++){
 			Process p = cpu.newJob();
 
@@ -62,12 +60,10 @@ public class CPU{
 			}
 			
 		}
+		System.out.println("Initial Jobs Ready: \nStarting Simulation\n");
+
 		cpu.run();
 		
-	}
-
-	public static void UnitTest(){
-		//Test everything in here!
 	}
 
 	public CPU(String schedType){
@@ -258,7 +254,7 @@ public class CPU{
 							//It is higher! so we should preempt it!
 							System.out.println("Scheduling new job with PID " + p.PID + " with higher priority than current job. PreEmpting...");
 							jobScheduler.scheduleWithPriority(p,newJobPriority);
-							jobScheduler.setResponseTime(p.PID,System.currentTimeMillis(),startingTime);
+							
 							jobScheduler.scheduleWithPriority(currentJob,currentJob.getSchedule());
 							printStatus();
 							continue;
@@ -272,7 +268,7 @@ public class CPU{
 						System.out.println("Scheduling new job with PID " + p.PID);
 						jobScheduler.scheduleWithPriority(p,newJobPriority);
 					}
-					jobScheduler.setResponseTime(p.PID,System.currentTimeMillis(),startingTime);
+					
 				}
 			}
 			//Actually execute the job
@@ -297,7 +293,7 @@ public class CPU{
 		for(int i=0; i < nextPID; i++){
 			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + (cpuTime.get(i)+waitingTime.get(i)+responseTime.get(i)) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
 			avgTurn += cpuTime.get(i) + waitingTime.get(i) + responseTime.get(i);
-			avgWait += waitingTime.get(i);
+			avgWait += waitingTime.get(i);	
 		}
 
 		System.out.println("========================================================");

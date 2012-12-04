@@ -8,6 +8,64 @@ public class Scheduler{
 	//Max value defined as timeslice at first, redefined only for Round Robin
 	public long timeSlice = Long.MAX_VALUE-1;
 
+	/**
+	*Unit test for Scheduler
+	*/
+	public static void main(String[] args) {
+		System.out.println("Running Unit Tests on Scheduler");
+		Scheduler sched = new Scheduler();
+		try{
+
+			//Polymorphism
+			System.out.println("Comforming Polymorphic capabilities of algorithm");
+			System.out.println("Current Algorithm: " + sched.algorithm.getClass().getName());
+			System.out.println("Switching to Priority Queue" );
+			sched = new Scheduler(new PriorityQueue());
+			System.out.println("Current Algorithm: " + sched.algorithm.getClass().getName());
+			System.out.println("Switching to Shortest Job First" );
+			sched = new Scheduler(new SJBQueue());
+			System.out.println("Current Algorithm: " + sched.algorithm.getClass().getName());
+			System.out.println("Switching to Round Robin" );
+			sched = new Scheduler( new RoundRobinQueue());
+			System.out.println("Current Algorithm: " + sched.algorithm.getClass().getName());
+			System.out.println("Switching to FIFO Queue" );
+			sched = new Scheduler(new Queue());
+			System.out.println("Current Algorithm: " + sched.algorithm.getClass().getName());
+			//Testing constructor for preemptive
+			System.out.println("Switching to Preemptive");
+			sched = new Scheduler(true);
+			System.out.println("Pre-Emptive: "+sched.isPreEmptive());
+			//Schedule some process
+			sched.schedule(new Process(1).setBurst(100));
+			sched.schedule(new Process(2).setBurst(150));
+			System.out.println("Showing Scheduler Status:");
+			sched.printState();
+			System.out.println("Sending pre-empting process");
+			sched.schedule(new Process(3).setBurst(50));
+			System.out.println("Showing Scheduler Status:");
+			sched.printState();
+			System.out.println("Servicing Job: ");
+			ProcessControlBlock pcb = sched.nextJob();
+			System.out.println("Showing Scheduler Status:");
+			sched.printState();
+			System.out.println("Putting serviced job back in and then testing");
+			System.out.println("Removing Job");
+			sched.schedule(pcb);
+			sched.removeJob(pcb);
+			sched.printState();
+
+		}catch(Exception e){
+			System.out.println("Unit Test on Queue Failed");
+			for(StackTraceElement element : e.getStackTrace()){
+				System.out.println("Trace: " + element.toString());
+			}		
+		}
+		
+
+
+
+	}
+
 	public void removeJob(ProcessControlBlock pcb){
 		algorithm.remove(pcb.getPID());
 	}
@@ -106,13 +164,6 @@ public class Scheduler{
 		this.preEmptive = preEmptive;
 	}
 
-	public void allocateSpaceForNextJob(){
-		ProcessControlBlock pcb = algorithm.deQueue();
-		if(pcb != null){
-			//Magic happens and we allocate space for the next job
-			pcb.changeStateTo(State.READY);
-		}
-	}
 
 	public void setTimeSlice(long time){
 		this.timeSlice = time;
@@ -132,13 +183,6 @@ public class Scheduler{
 			System.out.println("Printing Queue:");
 			algorithm.printQueue();
 		}
-
-	}
-
-	public void setResponseTime(int PID, long response, long cpuStartTime){
-		ProcessControlBlock pcb  = algorithm.find(PID);
-		pcb.setResponseTime((response) - (cpuStartTime - pcb.getStartTime()));
-		System.out.println("DEBUG " + pcb.getStartTime());
 
 	}
 
