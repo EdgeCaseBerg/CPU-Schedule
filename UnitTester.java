@@ -1,9 +1,20 @@
+
+import java.io.*;
+
 public class UnitTester{
 	public static void main(String[] args) {
-		UnitTester ut = new UnitTester();
+		boolean redirect = true;
+		if(args.length > 0){
+			redirect = false;
+		}
+		UnitTester ut = new UnitTester(redirect);
 	}
 
-	public UnitTester(){
+	public UnitTester(boolean redirect){
+		if(redirect){
+		try{
+			System.setOut(new PrintStream(new BufferedOutputStream(new FileOutputStream("output.txt"))));
+		}catch(Exception e){}}
 		System.out.println("Ethan Eldridge OS CPU Scheduling Simulation");
 		System.out.println("Unit Testing OS Structures and CPU");
 		System.out.println("---------------------NEW TEST----------------------");
@@ -22,6 +33,6 @@ public class UnitTester{
 		System.out.println("Running CPU w/ default Queue");
 		CPU.main(new String[]{""});
 		System.out.println("Unit Tests Complete...");
-		
+
 	}
 }
