@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
+import javax.swing.JScrollBar;
 import java.awt.Dimension;
 
 public class Driver{
@@ -22,6 +23,7 @@ public class Driver{
 			scroll = new JScrollPane(pane);
 			scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 			scroll.setVisible(true);
+			scroll.setAutoscrolls(true);
 			
 
 			consoleOut.setTitle("Simulation Output");
@@ -35,6 +37,14 @@ public class Driver{
 
 		@Override
 		public void println(String x){
+			//We need to add mroe space for all our text!
+			JScrollBar sb = scroll.getVerticalScrollBar();
+			int curVal = sb.getValue();
+			if(sb.getMaximum() == curVal + sb.getVisibleAmount()){
+				//We're at the max
+				pane.setPreferredSize(new Dimension(550,(int)pane.getPreferredSize().getHeight() + 1000 ));
+			}
+
 			//Override the println so we can put it to the console.
 			pane.append(x);
 			pane.append("\n");
@@ -73,11 +83,9 @@ public class Driver{
 
 				}else{
 					//Invalid CPU Type or command
-					System.out.println("Improper Command");
 				}
 			}else{
 				//Improper Input or invalid option
-				System.out.println("Improper Command");
 			}
 		}
 	}
@@ -106,7 +114,7 @@ public class Driver{
 	}
 
 	public boolean handleCPUType(String cType){
-		if(cType==null){return;}
+		if(cType==null){return false;}
 		int aType = -1;
 		try{
 			aType = Integer.parseInt(cType);
@@ -151,7 +159,6 @@ public class Driver{
 
 	public static void main(String[] args) {
 		Driver d = new Driver();
-		for(int i = 0; i < 222; i++){System.out.println("-----------------------------------------------------");}
 		d.loop();
 
 		
