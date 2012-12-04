@@ -15,7 +15,7 @@ public class Driver{
 			super(out);
 
 			
-			pane.setPreferredSize(new Dimension(550,400));
+			pane.setPreferredSize(new Dimension(550,100000));
 			pane.setEditable(false);
 			pane.setVisible(true);
 
@@ -70,13 +70,15 @@ public class Driver{
 			if(handleCPUType(getCPUType())){
 				//We have run the cpu. So open it's output file and show it the Haiguang
 				if(handleCPUType(getCPUType())){
-					
+
+				}else{
+					//Invalid CPU Type or command
+					System.out.println("Improper Command");
 				}
 			}else{
 				//Improper Input or invalid option
-
+				System.out.println("Improper Command");
 			}
-
 		}
 	}
 
@@ -89,6 +91,9 @@ public class Driver{
 	}
 
 	public boolean handleOption(String option){
+		if(option==null){
+			return false;
+		}
 		if(option.toUpperCase().equals("S")){
 			return true;
 		}else if (option.toUpperCase().equals("Q")){
@@ -101,6 +106,7 @@ public class Driver{
 	}
 
 	public boolean handleCPUType(String cType){
+		if(cType==null){return;}
 		int aType = -1;
 		try{
 			aType = Integer.parseInt(cType);
@@ -145,7 +151,8 @@ public class Driver{
 
 	public static void main(String[] args) {
 		Driver d = new Driver();
-
+		for(int i = 0; i < 222; i++){System.out.println("-----------------------------------------------------");}
+		d.loop();
 
 		
 	}
