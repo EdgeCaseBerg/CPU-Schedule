@@ -70,8 +70,8 @@ public class Driver{
 			});
 			quit.setMnemonic(KeyEvent.VK_ESCAPE);
 
-			consoleOut.addKeyListener(new KeyAdapter(){
-				public void actionPerformed(KeyEvent e){
+			input.addKeyListener(new KeyAdapter(){
+				public void keyPressed(KeyEvent e){
 					if(e.getKeyCode()==KeyEvent.VK_ENTER){
 						entry();
 					}else if(e.getKeyCode()==KeyEvent.VK_ESCAPE){
