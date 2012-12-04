@@ -4,13 +4,32 @@ import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JScrollBar;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.BoxLayout;
 import java.awt.Dimension;
 
 public class Driver{
+	ConsoleStream cs;
+
 	private class ConsoleStream extends PrintStream{
+
+		String option = "<html>Enter S to Run Simulation<br>"
+				   +"Enter q to quit the program.</html>";
+
+		String commands = "<html>Enter 1 for FIFO Queue CPU Simulation<br>"
+					+"Enter 2 for Shortest Job First CPU Simulation<br>"
+					+"Enter 3 for Priorty Queue CPU Simulation (Non Preemptive)<br>"
+					+"Enter 4 for Priorty Queue CPU Simulation (Preemptive)<br>"
+					+"Enter 5 for Round Robin CPU Simulation</html>";
+
 		JFrame consoleOut = new JFrame();
 		JScrollPane scroll = new JScrollPane();
 		JTextArea pane = new JTextArea();
+		JTextArea input = new JTextArea();
+		JButton enter = new JButton("Enter");
+		JButton quit = new JButton("Quit");
+		JLabel info = new JLabel(option);
 
 		public ConsoleStream(OutputStream out){
 			super(out);
@@ -21,15 +40,21 @@ public class Driver{
 			pane.setVisible(true);
 
 			scroll = new JScrollPane(pane);
+			scroll.setPreferredSize(new Dimension(550,300));
 			scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 			scroll.setVisible(true);
 			scroll.setAutoscrolls(true);
+
+			consoleOut.setLayout(new BoxLayout(consoleOut.getContentPane(),BoxLayout.Y_AXIS));
 			
 
 			consoleOut.setTitle("Simulation Output");
 			consoleOut.setSize(600,400);
 			consoleOut.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			consoleOut.add(scroll);
+			consoleOut.add(info);
+			consoleOut.add(enter);
+			consoleOut.add(quit);
 
 			consoleOut.setVisible(true);
 			
@@ -59,14 +84,7 @@ public class Driver{
 			pane.setText("");
 		}
 	}
-	String option = "Enter S to Run Simulation\n"
-				   +"Enter q to quit the program.";
-
-	String commands = "Enter 1 for FIFO Queue CPU Simulation\n"
-					+"Enter 2 for Shortest Job First CPU Simulation\n"
-					+"Enter 3 for Priorty Queue CPU Simulation (Non Preemptive)\n"
-					+"Enter 4 for Priorty Queue CPU Simulation (Preemptive)\n"
-					+"Enter 5 for Round Robin CPU Simulation";
+	
 
 	boolean confusion = false;
 
@@ -91,11 +109,11 @@ public class Driver{
 	}
 
 	public String getCPUType(){
-		return JOptionPane.showInputDialog(null,commands,JOptionPane.QUESTION_MESSAGE);
+		return "S";
 	}
 
 	public String getOption(){
-		return JOptionPane.showInputDialog(null,option,JOptionPane.QUESTION_MESSAGE);	
+		return "1";
 	}
 
 	public boolean handleOption(String option){
@@ -150,7 +168,8 @@ public class Driver{
 
 	public Driver(){
 		try{
-			System.setOut(new ConsoleStream(new BufferedOutputStream(new FileOutputStream("output.txt"))));
+			cs = new ConsoleStream(new BufferedOutputStream(new FileOutputStream("output.txt")));
+			System.setOut(cs);
 		}catch(Exception e){
 			System.out.println("Couldn't open output.txt");
 		}
