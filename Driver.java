@@ -4,15 +4,24 @@ import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JScrollBar;
+import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 import javax.swing.BoxLayout;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.FlowLayout;
 
 public class Driver{
 	ConsoleStream cs;
 
 	private class ConsoleStream extends PrintStream{
+
+		int step = 0;
 
 		String option = "<html>Enter S to Run Simulation<br>"
 				   +"Enter q to quit the program.</html>";
@@ -26,7 +35,7 @@ public class Driver{
 		JFrame consoleOut = new JFrame();
 		JScrollPane scroll = new JScrollPane();
 		JTextArea pane = new JTextArea();
-		JTextArea input = new JTextArea();
+		JTextField input = new JTextField();
 		JButton enter = new JButton("Enter");
 		JButton quit = new JButton("Quit");
 		JLabel info = new JLabel(option);
@@ -47,17 +56,65 @@ public class Driver{
 
 			consoleOut.setLayout(new BoxLayout(consoleOut.getContentPane(),BoxLayout.Y_AXIS));
 			
+			enter.addActionListener(new ActionListener(){
+				public void actionPerformed(ActionEvent e){
+					entry();
+				}
+			});
+			enter.setMnemonic(KeyEvent.VK_ENTER);
+
+			quit.addActionListener(new ActionListener(){
+				public void actionPerformed(ActionEvent e){
+					System.exit(0);
+				}
+			});
+			quit.setMnemonic(KeyEvent.VK_ESCAPE);
+
+			consoleOut.addKeyListener(new KeyAdapter(){
+				public void actionPerformed(KeyEvent e){
+					if(e.getKeyCode()==KeyEvent.VK_ENTER){
+						entry();
+					}else if(e.getKeyCode()==KeyEvent.VK_ESCAPE){
+						System.exit(0);
+					}
+				}
+			});
+
+			input.setPreferredSize(new Dimension(200,20));
+			input.setText("Enter Commands Here");
+			input.requestFocus();
+			input.setEditable(true);
+
+			JPanel commandPanel = new JPanel(new FlowLayout());
+
+
+			commandPanel.add(input);
+			commandPanel.add(enter);
+			commandPanel.add(quit);
 
 			consoleOut.setTitle("Simulation Output");
 			consoleOut.setSize(600,400);
 			consoleOut.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			consoleOut.add(scroll);
 			consoleOut.add(info);
-			consoleOut.add(enter);
-			consoleOut.add(quit);
-
+			consoleOut.add(commandPanel);
+			
 			consoleOut.setVisible(true);
 			
+		}
+
+		public void entry(){
+			if(Driver.handleText(input.getText())){
+				if(step==0){
+					step++;
+					info.setText(commands);
+				}else{
+					step=0;
+					info.setText(option);
+					info.invalidate();
+				}
+			}
+			input.setText("");
 		}
 
 		@Override
@@ -86,37 +143,23 @@ public class Driver{
 	}
 	
 
-	boolean confusion = false;
+	public static boolean handleText(String text){
+		if(handleOption(text)){
+			//True!
+			return true;
+		}else{
+			//Might have entered it incorrectly, or are doing second part:
+			if(handleCPUType(text)){
 
-	
-
-	public void loop(){
-		while(handleOption(getOption())){
-			//If they didn't enter a proper command then they are confused, ask again.
-			if(confusion){continue;}
-
-			if(handleCPUType(getCPUType())){
-				//We have run the cpu. So open it's output file and show it the Haiguang
-				if(handleCPUType(getCPUType())){
-
-				}else{
-					//Invalid CPU Type or command
-				}
 			}else{
-				//Improper Input or invalid option
+				//They failed
+				System.out.println("Incorrect Command");
 			}
 		}
+		return false;
 	}
 
-	public String getCPUType(){
-		return "S";
-	}
-
-	public String getOption(){
-		return "1";
-	}
-
-	public boolean handleOption(String option){
+	public static boolean handleOption(String option){
 		if(option==null){
 			return false;
 		}
@@ -127,11 +170,11 @@ public class Driver{
 		}else{
 			//WE'll ask them for input again
 			System.out.println("Entered Incorrect Option");
-			return true;
+			return false;
 		}
 	}
 
-	public boolean handleCPUType(String cType){
+	public static boolean handleCPUType(String cType){
 		if(cType==null){return false;}
 		int aType = -1;
 		try{
@@ -160,7 +203,6 @@ public class Driver{
 				break;
 			default:
 				System.out.println("CLEARTHISTEXT");
-				System.out.println("Entered Invalid option for Queue type");
 				return false;
 		}
 		return true;
@@ -178,9 +220,7 @@ public class Driver{
 
 	public static void main(String[] args) {
 		Driver d = new Driver();
-		d.loop();
-
-		
+	
 	}
 
 }
