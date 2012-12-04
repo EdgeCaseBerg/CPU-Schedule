@@ -295,9 +295,6 @@ public class CPU{
 			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + (cpuTime.get(i)+waitingTime.get(i)+responseTime.get(i)) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
 			avgTurn += cpuTime.get(i) + waitingTime.get(i) + responseTime.get(i);
 			avgWait += waitingTime.get(i);	
-			System.out.println("DEBUG " + cpuTime.get(i));
-			System.out.println("DEBUG " + waitingTime.get(i));
-			System.out.println("DEBUG " + responseTime.get(i));
 		}
 
 		System.out.println("========================================================");
