@@ -26,10 +26,6 @@ public class ProcessControlBlock{
 	*/
 	private long startTime = -1;
 	/**
-	*The response time (time from when it was put into the queue)
-	*/
-	private long responseTime = 0;
-	/**
 	*Process pointer
 	*/
 	Process p;
@@ -63,13 +59,6 @@ public class ProcessControlBlock{
 		return schedule;
 	}
 
-	public long getResponseTime(){
-		return responseTime;
-	}
-
-	public void setResponseTime(long response){
-		this.responseTime = response;
-	}
 
 	public ProcessControlBlock setSchedule(long priority){
 		schedule = priority;

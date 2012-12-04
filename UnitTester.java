@@ -22,5 +22,6 @@ public class UnitTester{
 		System.out.println("Running CPU w/ default Queue");
 		CPU.main(new String[]{""});
 		System.out.println("Unit Tests Complete...");
+		
 	}
 }
