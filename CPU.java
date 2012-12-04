@@ -25,6 +25,7 @@ public class CPU{
 	public static HashMap<Integer,Long> cpuTime = new HashMap<Integer,Long>();
 	public static HashMap<Integer,Long> waitingTime = new HashMap<Integer,Long>();
 	public static HashMap<Integer,Long> responseTime = new HashMap<Integer,Long>();
+	public static HashMap<Integer,Long> queueEntry = new HashMap<Integer,Long>();
 
 	/**
 	*The current process being executed 
@@ -93,6 +94,7 @@ public class CPU{
 	public Process newJob(){
 		//Make a new process with a random burst time between 0 and 1000 milliseconds
 		Process p = new Process((int)nextPID).setBurst(rands.nextInt(1000));
+		queueEntry.put((int)nextPID,System.currentTimeMillis());
 		nextPID++;
 		return p;
 		
@@ -115,7 +117,6 @@ public class CPU{
 	public void freeJob(int PID){
 		//Save the stats for this process
 		//Turn around time is easy
-		responseTime.put(PID,currentJob.getResponseTime());
 		cpuTime.put(PID,System.currentTimeMillis() - currentJob.getStartTime());
 		//Final computation of waiting time
 		waitingTime.put(PID,waitingTime.get(PID) - startingTime);
@@ -210,6 +211,7 @@ public class CPU{
 			System.out.println("=============================================");
 			System.out.println("Getting Job from Queue");
 			currentJob = jobScheduler.nextJob();
+			
 
 
 			if(currentJob == null){
@@ -218,6 +220,10 @@ public class CPU{
 				break;
 			}
 			System.out.println(" with PID " + currentJob.getPID());
+			//Response time end is when it FIRST beings executing
+			if(!responseTime.containsKey(currentJob.getPID())){
+				responseTime.put(currentJob.getPID(),System.currentTimeMillis() - queueEntry.get(currentJob.getPID()));
+			}
 
 			if(currentJob.getState()==State.WAITING){
 				//If the job was waiting on IO then is it done?
@@ -292,9 +298,6 @@ public class CPU{
 			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + (cpuTime.get(i)+waitingTime.get(i)+responseTime.get(i)) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
 			avgTurn += cpuTime.get(i) + waitingTime.get(i) + responseTime.get(i);
 			avgWait += waitingTime.get(i);
-			System.out.println("DEBUG CPU " + cpuTime.get(i));
-			System.out.println("DEBUG WAIT " + waitingTime.get(i) );
-			System.out.println("DEBUG RESPONSE " + responseTime.get(i));
 		}
 
 		System.out.println("========================================================");
