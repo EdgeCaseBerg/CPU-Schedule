@@ -1,0 +1,221 @@
+Setting up Simulation with 8 starting processes
+Allocating Job with PID 0 into Process List
+Allocating Job with PID 1 into Process List
+Allocating Job with PID 2 into Process List
+Allocating Job with PID 3 into Process List
+Allocating Job with PID 4 into Process List
+Allocating Job with PID 5 into Process List
+Allocating Job with PID 6 into Process List
+Allocating Job with PID 7 into Process List
+Initial Jobs Ready: 
+Starting Simulation
+
+=============================================
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 1 Desired CPU Time (ms): 538
+Terminating Job with PID 3
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 5 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 696 Priority: 420
+PID: 4 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 95 Priority: 423
+PID: 6 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 307 Priority: 489
+PID: 2 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 943 Priority: 906
+PID: 7 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 607 Priority: 951
+PID: 1 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 870 Priority: 1386
+PID: 0 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 482 Priority: 1958
+=============================================
+Getting Job from Queue
+ with PID 5
+Allocating Job with PID 8 into Process List
+Scheduling new job with PID 8
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 3 Desired CPU Time (ms): 696
+Terminating Job with PID 5
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 4
+PID: 6
+PID: 7
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 4 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 95 Priority: 423
+PID: 6 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 307 Priority: 489
+PID: 2 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 943 Priority: 906
+PID: 7 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 607 Priority: 951
+PID: 1 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 870 Priority: 1386
+PID: 0 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 482 Priority: 1958
+PID: 8 State: NEW Actual CPU Time (ms): 1 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 4 Desired CPU Time (ms): 95
+Terminating Job with PID 4
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 6
+PID: 7
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 6 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 307 Priority: 489
+PID: 2 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 943 Priority: 906
+PID: 7 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 607 Priority: 951
+PID: 1 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 870 Priority: 1386
+PID: 0 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 482 Priority: 1958
+PID: 8 State: NEW Actual CPU Time (ms): 2 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 6
+Executing Current Job:  PID: 6 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 307
+Terminating Job with PID 6
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 7
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 2 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 943 Priority: 906
+PID: 7 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 607 Priority: 951
+PID: 1 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 870 Priority: 1386
+PID: 0 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 482 Priority: 1958
+PID: 8 State: NEW Actual CPU Time (ms): 3 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 2
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 943
+Terminating Job with PID 2
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 7
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 7 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 607 Priority: 951
+PID: 1 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 870 Priority: 1386
+PID: 0 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 482 Priority: 1958
+PID: 8 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 7
+Executing Current Job:  PID: 7 State: RUNNING Actual CPU Time (ms): 7 Desired CPU Time (ms): 607
+Terminating Job with PID 7
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 1 State: NEW Actual CPU Time (ms): 7 Desired CPU Time (ms): 870 Priority: 1386
+PID: 0 State: NEW Actual CPU Time (ms): 8 Desired CPU Time (ms): 482 Priority: 1958
+PID: 8 State: NEW Actual CPU Time (ms): 4 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 8 Desired CPU Time (ms): 870
+Terminating Job with PID 1
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 0 State: NEW Actual CPU Time (ms): 9 Desired CPU Time (ms): 482 Priority: 1958
+PID: 8 State: NEW Actual CPU Time (ms): 5 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 9 Desired CPU Time (ms): 482
+Terminating Job with PID 0
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+PID: 8 State: NEW Actual CPU Time (ms): 6 Desired CPU Time (ms): 574 Priority: 1967
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 574
+Terminating Job with PID 8
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+________________________________________
+Current State of the Process Queue:
+Scheduler using PriorityQueue Type Queue Structure
+Pre-Emptive: true
+Printing Queue:
+=============================================
+Getting Job from Queue
+No More Jobs on Queue. Exiting Simulation
+
+CPU Statistics:
+========================================================
+PID: 0	| Turn Around Time Of: 32	| Waiting Time: 8	|
+PID: 1	| Turn Around Time Of: 25	| Waiting Time: 8	|
+PID: 2	| Turn Around Time Of: 18	| Waiting Time: 6	|
+PID: 3	| Turn Around Time Of: 2	| Waiting Time: 1	|
+PID: 4	| Turn Around Time Of: 12	| Waiting Time: 4	|
+PID: 5	| Turn Around Time Of: 9	| Waiting Time: 3	|
+PID: 6	| Turn Around Time Of: 15	| Waiting Time: 5	|
+PID: 7	| Turn Around Time Of: 21	| Waiting Time: 7	|
+PID: 8	| Turn Around Time Of: 21	| Waiting Time: 9	|
+========================================================
+Averages:
+Turn Around:  19
+Waiting Time: 6
+========================================================

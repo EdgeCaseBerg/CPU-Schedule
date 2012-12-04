@@ -2,4 +2,8 @@
 *.class
 #ignore output files
 *.txt
+#But the output files for TA come up
+!output1.txt
+!output2.txt
+!output3.txt
 

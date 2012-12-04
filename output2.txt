@@ -1,0 +1,4051 @@
+Setting up Simulation with 8 starting processes
+Allocating Job with PID 0 into Process List
+Allocating Job with PID 1 into Process List
+Allocating Job with PID 2 into Process List
+Allocating Job with PID 3 into Process List
+Allocating Job with PID 4 into Process List
+Allocating Job with PID 5 into Process List
+Allocating Job with PID 6 into Process List
+Allocating Job with PID 7 into Process List
+Initial Jobs Ready: 
+Starting Simulation
+
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 3 Desired CPU Time (ms): 656
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 1 Actual CPU Time (ms): 3 Desired CPU Time (ms): 498 State: NEW Time Left: 498
+PID: 2 Actual CPU Time (ms): 3 Desired CPU Time (ms): 499 State: NEW Time Left: 499
+PID: 3 Actual CPU Time (ms): 2 Desired CPU Time (ms): 467 State: NEW Time Left: 467
+PID: 4 Actual CPU Time (ms): 2 Desired CPU Time (ms): 712 State: NEW Time Left: 712
+PID: 5 Actual CPU Time (ms): 2 Desired CPU Time (ms): 727 State: NEW Time Left: 727
+PID: 6 Actual CPU Time (ms): 2 Desired CPU Time (ms): 65 State: NEW Time Left: 65
+PID: 7 Actual CPU Time (ms): 2 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 4 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+=============================================
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 4 Desired CPU Time (ms): 498
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 2 Actual CPU Time (ms): 4 Desired CPU Time (ms): 499 State: NEW Time Left: 499
+PID: 3 Actual CPU Time (ms): 3 Desired CPU Time (ms): 467 State: NEW Time Left: 467
+PID: 4 Actual CPU Time (ms): 4 Desired CPU Time (ms): 712 State: NEW Time Left: 712
+PID: 5 Actual CPU Time (ms): 4 Desired CPU Time (ms): 727 State: NEW Time Left: 727
+PID: 6 Actual CPU Time (ms): 4 Desired CPU Time (ms): 65 State: NEW Time Left: 65
+PID: 7 Actual CPU Time (ms): 4 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 6 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 5 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+=============================================
+Getting Job from Queue
+ with PID 2
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 499
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 5 Desired CPU Time (ms): 467 State: NEW Time Left: 467
+PID: 4 Actual CPU Time (ms): 5 Desired CPU Time (ms): 712 State: NEW Time Left: 712
+PID: 5 Actual CPU Time (ms): 5 Desired CPU Time (ms): 727 State: NEW Time Left: 727
+PID: 6 Actual CPU Time (ms): 5 Desired CPU Time (ms): 65 State: NEW Time Left: 65
+PID: 7 Actual CPU Time (ms): 5 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 7 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 6 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 6 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+=============================================
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 467
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 6 Desired CPU Time (ms): 712 State: NEW Time Left: 712
+PID: 5 Actual CPU Time (ms): 6 Desired CPU Time (ms): 727 State: NEW Time Left: 727
+PID: 6 Actual CPU Time (ms): 6 Desired CPU Time (ms): 65 State: NEW Time Left: 65
+PID: 7 Actual CPU Time (ms): 6 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 8 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 7 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 7 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 6 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 7 Desired CPU Time (ms): 727 State: NEW Time Left: 727
+PID: 6 Actual CPU Time (ms): 7 Desired CPU Time (ms): 65 State: NEW Time Left: 65
+PID: 7 Actual CPU Time (ms): 7 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 9 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 8 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 8 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 7 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 7 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 7 Desired CPU Time (ms): 727
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 6 Actual CPU Time (ms): 8 Desired CPU Time (ms): 65 State: NEW Time Left: 65
+PID: 7 Actual CPU Time (ms): 8 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 10 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 9 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 9 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 8 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 8 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 8 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+=============================================
+Getting Job from Queue
+ with PID 6
+Executing Current Job:  PID: 6 State: RUNNING Actual CPU Time (ms): 8 Desired CPU Time (ms): 65
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 7 Actual CPU Time (ms): 9 Desired CPU Time (ms): 189 State: NEW Time Left: 189
+PID: 0 Actual CPU Time (ms): 11 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 10 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 10 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 9 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 9 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 9 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 9 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+=============================================
+Getting Job from Queue
+ with PID 7
+Executing Current Job:  PID: 7 State: RUNNING Actual CPU Time (ms): 10 Desired CPU Time (ms): 189
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 0 Actual CPU Time (ms): 12 Desired CPU Time (ms): 656 State: HALTED Time Left: 556
+PID: 1 Actual CPU Time (ms): 11 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 11 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 10 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 10 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 10 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 11 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 11 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 13 Desired CPU Time (ms): 656
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 1 Actual CPU Time (ms): 12 Desired CPU Time (ms): 498 State: HALTED Time Left: 398
+PID: 2 Actual CPU Time (ms): 12 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 11 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 11 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 12 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 12 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 12 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 14 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+=============================================
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 13 Desired CPU Time (ms): 498
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 2 Actual CPU Time (ms): 13 Desired CPU Time (ms): 499 State: HALTED Time Left: 399
+PID: 3 Actual CPU Time (ms): 12 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 12 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 12 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 13 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 13 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 15 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 14 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+=============================================
+Getting Job from Queue
+ with PID 2
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 14 Desired CPU Time (ms): 499
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 13 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 13 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 13 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 13 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 14 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 16 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 15 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 15 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+=============================================
+Getting Job from Queue
+ with PID 3
+Process with PID 3 has finished IO
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 14 Desired CPU Time (ms): 467
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 14 Desired CPU Time (ms): 712 State: HALTED Time Left: 612
+PID: 5 Actual CPU Time (ms): 14 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 15 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 15 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 17 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 16 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 16 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 15 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 15 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 17 Desired CPU Time (ms): 727 State: WAITING Time Left: 727
+PID: 6 Actual CPU Time (ms): 17 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 17 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 19 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 18 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 18 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 17 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 17 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+=============================================
+Getting Job from Queue
+ with PID 5
+Process with PID 5 has finished IO
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 18 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 6
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 6 Actual CPU Time (ms): 18 Desired CPU Time (ms): 65 State: WAITING Time Left: 65
+PID: 7 Actual CPU Time (ms): 18 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 20 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 19 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 20 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 19 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 19 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 19 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+=============================================
+Getting Job from Queue
+ with PID 6
+Executing Current Job:  PID: 6 State: RUNNING Actual CPU Time (ms): 19 Desired CPU Time (ms): 65
+Terminating Job with PID 6
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 7
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 7 Actual CPU Time (ms): 19 Desired CPU Time (ms): 189 State: HALTED Time Left: 89
+PID: 0 Actual CPU Time (ms): 21 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 20 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 21 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 20 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 20 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 20 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+=============================================
+Getting Job from Queue
+ with PID 7
+Executing Current Job:  PID: 7 State: RUNNING Actual CPU Time (ms): 20 Desired CPU Time (ms): 189
+Terminating Job with PID 7
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 0 Actual CPU Time (ms): 22 Desired CPU Time (ms): 656 State: HALTED Time Left: 456
+PID: 1 Actual CPU Time (ms): 21 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 21 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 21 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 21 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 21 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+=============================================
+Getting Job from Queue
+ with PID 0
+Allocating Job with PID 8 into Process List
+Scheduling new job with PID 8
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 23 Desired CPU Time (ms): 656
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 1 Actual CPU Time (ms): 22 Desired CPU Time (ms): 498 State: HALTED Time Left: 298
+PID: 2 Actual CPU Time (ms): 22 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 21 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 21 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 22 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+PID: 8 Actual CPU Time (ms): 1 Desired CPU Time (ms): 649 State: NEW Time Left: 649
+PID: 0 Actual CPU Time (ms): 24 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+=============================================
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 23 Desired CPU Time (ms): 498
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 2 Actual CPU Time (ms): 23 Desired CPU Time (ms): 499 State: HALTED Time Left: 299
+PID: 3 Actual CPU Time (ms): 23 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 23 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 23 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+PID: 8 Actual CPU Time (ms): 2 Desired CPU Time (ms): 649 State: NEW Time Left: 649
+PID: 0 Actual CPU Time (ms): 25 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+PID: 1 Actual CPU Time (ms): 24 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+=============================================
+Getting Job from Queue
+ with PID 2
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 24 Desired CPU Time (ms): 499
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 23 Desired CPU Time (ms): 467 State: WAITING Time Left: 467
+PID: 4 Actual CPU Time (ms): 23 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 23 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+PID: 8 Actual CPU Time (ms): 3 Desired CPU Time (ms): 649 State: NEW Time Left: 649
+PID: 0 Actual CPU Time (ms): 26 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+PID: 1 Actual CPU Time (ms): 25 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+PID: 2 Actual CPU Time (ms): 25 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+=============================================
+Getting Job from Queue
+ with PID 3
+Allocating Job with PID 9 into Process List
+Scheduling new job with PID 9
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 24 Desired CPU Time (ms): 467
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 24 Desired CPU Time (ms): 712 State: HALTED Time Left: 512
+PID: 5 Actual CPU Time (ms): 24 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+PID: 8 Actual CPU Time (ms): 4 Desired CPU Time (ms): 649 State: NEW Time Left: 649
+PID: 0 Actual CPU Time (ms): 27 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+PID: 1 Actual CPU Time (ms): 26 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+PID: 2 Actual CPU Time (ms): 26 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+PID: 9 Actual CPU Time (ms): 1 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 25 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 25 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 25 Desired CPU Time (ms): 727 State: HALTED Time Left: 627
+PID: 8 Actual CPU Time (ms): 4 Desired CPU Time (ms): 649 State: NEW Time Left: 649
+PID: 0 Actual CPU Time (ms): 27 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+PID: 1 Actual CPU Time (ms): 26 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+PID: 2 Actual CPU Time (ms): 27 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+PID: 9 Actual CPU Time (ms): 2 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 26 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 26 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 26 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 5 Desired CPU Time (ms): 649 State: NEW Time Left: 649
+PID: 0 Actual CPU Time (ms): 28 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+PID: 1 Actual CPU Time (ms): 27 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+PID: 2 Actual CPU Time (ms): 27 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+PID: 9 Actual CPU Time (ms): 2 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 26 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 26 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 27 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 649
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 0 Actual CPU Time (ms): 29 Desired CPU Time (ms): 656 State: HALTED Time Left: 356
+PID: 1 Actual CPU Time (ms): 28 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+PID: 2 Actual CPU Time (ms): 28 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+PID: 9 Actual CPU Time (ms): 3 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 27 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 27 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 27 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 6 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 30 Desired CPU Time (ms): 656
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 1 Actual CPU Time (ms): 29 Desired CPU Time (ms): 498 State: HALTED Time Left: 198
+PID: 2 Actual CPU Time (ms): 29 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+PID: 9 Actual CPU Time (ms): 4 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 28 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 28 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 28 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 7 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 30 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+=============================================
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 29 Desired CPU Time (ms): 498
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 2 Actual CPU Time (ms): 30 Desired CPU Time (ms): 499 State: HALTED Time Left: 199
+PID: 9 Actual CPU Time (ms): 5 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 29 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 29 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 29 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 8 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 31 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 30 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+=============================================
+Getting Job from Queue
+ with PID 2
+Allocating Job with PID 10 into Process List
+Scheduling new job with PID 10
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 30 Desired CPU Time (ms): 499
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 6 Desired CPU Time (ms): 678 State: NEW Time Left: 678
+PID: 3 Actual CPU Time (ms): 30 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 30 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 30 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 9 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 32 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 31 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 1 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 31 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 678
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 31 Desired CPU Time (ms): 467 State: HALTED Time Left: 367
+PID: 4 Actual CPU Time (ms): 31 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 31 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 10 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 33 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 32 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 2 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 32 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 7 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+=============================================
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 32 Desired CPU Time (ms): 467
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 32 Desired CPU Time (ms): 712 State: HALTED Time Left: 412
+PID: 5 Actual CPU Time (ms): 32 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 12 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 35 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 34 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 4 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 34 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 9 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 33 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+=============================================
+Getting Job from Queue
+ with PID 4
+Allocating Job with PID 11 into Process List
+Scheduling new job with PID 11
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 33 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 34 Desired CPU Time (ms): 727 State: HALTED Time Left: 527
+PID: 8 Actual CPU Time (ms): 13 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 36 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 35 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 5 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 35 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 10 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 34 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 1 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 34 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 35 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 14 Desired CPU Time (ms): 649 State: HALTED Time Left: 549
+PID: 0 Actual CPU Time (ms): 37 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 36 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 7 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 37 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 12 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 36 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 3 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 36 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 36 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 15 Desired CPU Time (ms): 649
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 0 Actual CPU Time (ms): 38 Desired CPU Time (ms): 656 State: HALTED Time Left: 256
+PID: 1 Actual CPU Time (ms): 37 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 7 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 37 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 12 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 36 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 3 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 36 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 37 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 16 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 39 Desired CPU Time (ms): 656
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 1
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 1 Actual CPU Time (ms): 38 Desired CPU Time (ms): 498 State: HALTED Time Left: 98
+PID: 10 Actual CPU Time (ms): 8 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 38 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 13 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 37 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 4 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 37 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 37 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 16 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 39 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+=============================================
+Getting Job from Queue
+ with PID 1
+Executing Current Job:  PID: 1 State: RUNNING Actual CPU Time (ms): 38 Desired CPU Time (ms): 498
+Terminating Job with PID 1
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 9 Desired CPU Time (ms): 940 State: NEW Time Left: 940
+PID: 2 Actual CPU Time (ms): 39 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 14 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 38 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 5 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 38 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 38 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 17 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 40 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 9 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 2
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 2 Actual CPU Time (ms): 39 Desired CPU Time (ms): 499 State: HALTED Time Left: 99
+PID: 9 Actual CPU Time (ms): 14 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 38 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 5 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 38 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 38 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 17 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 40 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 10 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+=============================================
+Getting Job from Queue
+ with PID 2
+Executing Current Job:  PID: 2 State: RUNNING Actual CPU Time (ms): 40 Desired CPU Time (ms): 499
+Terminating Job with PID 2
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 15 Desired CPU Time (ms): 678 State: HALTED Time Left: 578
+PID: 3 Actual CPU Time (ms): 39 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 6 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 39 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 39 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 18 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 41 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 10 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 15 Desired CPU Time (ms): 678
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 39 Desired CPU Time (ms): 467 State: WAITING Time Left: 367
+PID: 11 Actual CPU Time (ms): 7 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 40 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 40 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 19 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 42 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 11 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 16 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+=============================================
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 40 Desired CPU Time (ms): 467
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 11 Actual CPU Time (ms): 7 Desired CPU Time (ms): 545 State: NEW Time Left: 545
+PID: 4 Actual CPU Time (ms): 40 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 40 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 19 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 42 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 11 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 16 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 40 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+=============================================
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 7 Desired CPU Time (ms): 545
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 41 Desired CPU Time (ms): 712 State: HALTED Time Left: 312
+PID: 5 Actual CPU Time (ms): 41 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 20 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 43 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 12 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 17 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 41 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 8 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 41 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 41 Desired CPU Time (ms): 727 State: HALTED Time Left: 427
+PID: 8 Actual CPU Time (ms): 20 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 43 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 12 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 17 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 41 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 8 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 41 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 41 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 21 Desired CPU Time (ms): 649 State: HALTED Time Left: 449
+PID: 0 Actual CPU Time (ms): 44 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 13 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 18 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 42 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 9 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 42 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 42 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 21 Desired CPU Time (ms): 649
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 0 Actual CPU Time (ms): 44 Desired CPU Time (ms): 656 State: HALTED Time Left: 156
+PID: 10 Actual CPU Time (ms): 13 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 18 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 42 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 9 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 42 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 42 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 21 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 44 Desired CPU Time (ms): 656
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 14 Desired CPU Time (ms): 940 State: HALTED Time Left: 840
+PID: 9 Actual CPU Time (ms): 19 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 43 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 10 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 43 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 43 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 22 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 45 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 14 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 19 Desired CPU Time (ms): 678 State: HALTED Time Left: 478
+PID: 3 Actual CPU Time (ms): 43 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 10 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 43 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 43 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 22 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 45 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 14 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 19 Desired CPU Time (ms): 678
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 44 Desired CPU Time (ms): 467 State: HALTED Time Left: 267
+PID: 11 Actual CPU Time (ms): 11 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 44 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 44 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 23 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 46 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 15 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 20 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+=============================================
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 44 Desired CPU Time (ms): 467
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 11 Actual CPU Time (ms): 11 Desired CPU Time (ms): 545 State: HALTED Time Left: 445
+PID: 4 Actual CPU Time (ms): 44 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 44 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 23 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 46 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 15 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 20 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 44 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+=============================================
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 11 Desired CPU Time (ms): 545
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 45 Desired CPU Time (ms): 712 State: HALTED Time Left: 212
+PID: 5 Actual CPU Time (ms): 45 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 24 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 47 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 16 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 21 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 45 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 12 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 45 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 45 Desired CPU Time (ms): 727 State: HALTED Time Left: 327
+PID: 8 Actual CPU Time (ms): 24 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 47 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 16 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 21 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 45 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 12 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 45 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+=============================================
+Getting Job from Queue
+ with PID 5
+Allocating Job with PID 12 into Process List
+Scheduling new job with PID 12
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 46 Desired CPU Time (ms): 727
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 25 Desired CPU Time (ms): 649 State: HALTED Time Left: 349
+PID: 0 Actual CPU Time (ms): 48 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 17 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 22 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 46 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 13 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 46 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 0 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 46 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 25 Desired CPU Time (ms): 649
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 0
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 0 Actual CPU Time (ms): 48 Desired CPU Time (ms): 656 State: HALTED Time Left: 56
+PID: 10 Actual CPU Time (ms): 17 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 22 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 46 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 14 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 47 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 1 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 47 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 26 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+=============================================
+Getting Job from Queue
+ with PID 0
+Executing Current Job:  PID: 0 State: RUNNING Actual CPU Time (ms): 49 Desired CPU Time (ms): 656
+Terminating Job with PID 0
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 18 Desired CPU Time (ms): 940 State: HALTED Time Left: 740
+PID: 9 Actual CPU Time (ms): 23 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 47 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 14 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 47 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 1 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 47 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 26 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 18 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 24 Desired CPU Time (ms): 678 State: HALTED Time Left: 378
+PID: 3 Actual CPU Time (ms): 48 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 15 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 48 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 2 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 48 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 27 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 19 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 24 Desired CPU Time (ms): 678
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 48 Desired CPU Time (ms): 467 State: WAITING Time Left: 267
+PID: 11 Actual CPU Time (ms): 15 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 48 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 2 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 48 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 27 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 19 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 24 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+=============================================
+Getting Job from Queue
+ with PID 3
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 48 Desired CPU Time (ms): 467
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 11 Actual CPU Time (ms): 17 Desired CPU Time (ms): 545 State: HALTED Time Left: 345
+PID: 4 Actual CPU Time (ms): 50 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 4 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 50 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 29 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 21 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 26 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 50 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+=============================================
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 17 Desired CPU Time (ms): 545
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 50 Desired CPU Time (ms): 712 State: HALTED Time Left: 112
+PID: 12 Actual CPU Time (ms): 4 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 50 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 29 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 21 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 26 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 50 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 17 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+=============================================
+Getting Job from Queue
+ with PID 4
+Allocating Job with PID 13 into Process List
+Scheduling new job with PID 13
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 51 Desired CPU Time (ms): 712
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 12 Actual CPU Time (ms): 5 Desired CPU Time (ms): 568 State: NEW Time Left: 568
+PID: 5 Actual CPU Time (ms): 51 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 30 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 22 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 27 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 51 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 18 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 0 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 51 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+=============================================
+Getting Job from Queue
+ with PID 12
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 568
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 52 Desired CPU Time (ms): 727 State: WAITING Time Left: 327
+PID: 8 Actual CPU Time (ms): 31 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 23 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 28 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 52 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 19 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 1 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 52 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 6 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+=============================================
+Getting Job from Queue
+ with PID 5
+Process with PID 5 has finished IO
+Allocating Job with PID 14 into Process List
+Scheduling new job with PID 14
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 52 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 31 Desired CPU Time (ms): 649 State: HALTED Time Left: 249
+PID: 10 Actual CPU Time (ms): 23 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 28 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 52 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 19 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 1 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 52 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 6 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 0 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 52 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 32 Desired CPU Time (ms): 649
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 24 Desired CPU Time (ms): 940 State: HALTED Time Left: 640
+PID: 9 Actual CPU Time (ms): 29 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 53 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 20 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 2 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 53 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 7 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 1 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 53 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 32 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 24 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 29 Desired CPU Time (ms): 678 State: WAITING Time Left: 378
+PID: 3 Actual CPU Time (ms): 53 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 20 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 2 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 53 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 8 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 2 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 54 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 33 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 25 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 30 Desired CPU Time (ms): 678
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 54 Desired CPU Time (ms): 467 State: HALTED Time Left: 167
+PID: 11 Actual CPU Time (ms): 21 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 3 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 54 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 8 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 2 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 54 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 33 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 25 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 30 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+=============================================
+Getting Job from Queue
+ with PID 3
+Allocating Job with PID 15 into Process List
+Scheduling new job with PID 15
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 54 Desired CPU Time (ms): 467
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 11 Actual CPU Time (ms): 22 Desired CPU Time (ms): 545 State: HALTED Time Left: 245
+PID: 13 Actual CPU Time (ms): 4 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 55 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 9 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 3 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 55 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 34 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 26 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 31 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 1 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 55 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+=============================================
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 22 Desired CPU Time (ms): 545
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 4 Desired CPU Time (ms): 936 State: NEW Time Left: 936
+PID: 4 Actual CPU Time (ms): 55 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 9 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 3 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 55 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 34 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 26 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 31 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 1 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 55 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 22 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 4 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 4
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 4 Actual CPU Time (ms): 56 Desired CPU Time (ms): 712 State: HALTED Time Left: 12
+PID: 12 Actual CPU Time (ms): 10 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 4 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 56 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 35 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 27 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 32 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 2 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 56 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 23 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 5 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+=============================================
+Getting Job from Queue
+ with PID 4
+Executing Current Job:  PID: 4 State: RUNNING Actual CPU Time (ms): 56 Desired CPU Time (ms): 712
+Terminating Job with PID 4
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 12 Actual CPU Time (ms): 10 Desired CPU Time (ms): 568 State: HALTED Time Left: 468
+PID: 14 Actual CPU Time (ms): 4 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 56 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 35 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 27 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 32 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 2 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 56 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 23 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 5 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+=============================================
+Getting Job from Queue
+ with PID 12
+Allocating Job with PID 16 into Process List
+Scheduling new job with PID 16
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 10 Desired CPU Time (ms): 568
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 14 Actual CPU Time (ms): 5 Desired CPU Time (ms): 458 State: NEW Time Left: 458
+PID: 5 Actual CPU Time (ms): 57 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 36 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 28 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 33 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 3 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 57 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 24 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 6 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 1 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 11 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+=============================================
+Getting Job from Queue
+ with PID 14
+Allocating Job with PID 17 into Process List
+Scheduling new job with PID 17
+Executing Current Job:  PID: 14 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 458
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 17
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 57 Desired CPU Time (ms): 727 State: HALTED Time Left: 227
+PID: 8 Actual CPU Time (ms): 36 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 28 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 33 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 3 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 57 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 24 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 6 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 1 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 11 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 0 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 5 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 58 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 17
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 37 Desired CPU Time (ms): 649 State: WAITING Time Left: 249
+PID: 10 Actual CPU Time (ms): 29 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 34 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 4 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 58 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 25 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 7 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 2 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 12 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 1 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 6 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 58 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 37 Desired CPU Time (ms): 649
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 17
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 29 Desired CPU Time (ms): 940 State: HALTED Time Left: 540
+PID: 9 Actual CPU Time (ms): 34 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 4 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 58 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 25 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 7 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 2 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 12 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 2 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 7 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 59 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 38 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 30 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 17
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 35 Desired CPU Time (ms): 678 State: HALTED Time Left: 278
+PID: 15 Actual CPU Time (ms): 5 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 59 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 26 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 8 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 3 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 13 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 2 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 7 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 59 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 38 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 30 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 35 Desired CPU Time (ms): 678
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 17
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 5 Desired CPU Time (ms): 897 State: NEW Time Left: 897
+PID: 3 Actual CPU Time (ms): 59 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 26 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 8 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 3 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 13 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 2 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 8 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 60 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 39 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 31 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 36 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 17
+PID: 16
+PID: 3
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 3 Actual CPU Time (ms): 60 Desired CPU Time (ms): 467 State: HALTED Time Left: 67
+PID: 11 Actual CPU Time (ms): 27 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 9 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 4 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 14 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 3 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 8 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 60 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 39 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 31 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 36 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 6 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+=============================================
+Getting Job from Queue
+ with PID 3
+Allocating Job with PID 18 into Process List
+Scheduling new job with PID 18
+Executing Current Job:  PID: 3 State: RUNNING Actual CPU Time (ms): 60 Desired CPU Time (ms): 467
+Terminating Job with PID 3
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 11 Actual CPU Time (ms): 28 Desired CPU Time (ms): 545 State: HALTED Time Left: 145
+PID: 13 Actual CPU Time (ms): 10 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 5 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 15 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 4 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 9 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 61 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 40 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 32 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 37 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 7 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 1 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+=============================================
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 28 Desired CPU Time (ms): 545
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 10 Desired CPU Time (ms): 936 State: HALTED Time Left: 836
+PID: 16 Actual CPU Time (ms): 5 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 15 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 4 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 9 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 61 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 40 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 32 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 37 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 7 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 1 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 28 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 10 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 6 Desired CPU Time (ms): 542 State: NEW Time Left: 542
+PID: 12 Actual CPU Time (ms): 16 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 5 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 10 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 62 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 41 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 33 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 38 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 8 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 2 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 29 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 11 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 542
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 12 Actual CPU Time (ms): 16 Desired CPU Time (ms): 568 State: HALTED Time Left: 368
+PID: 17 Actual CPU Time (ms): 5 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 10 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 62 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 41 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 33 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 38 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 8 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 2 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 29 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 11 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 6 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+=============================================
+Getting Job from Queue
+ with PID 12
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 16 Desired CPU Time (ms): 568
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 17 Actual CPU Time (ms): 6 Desired CPU Time (ms): 267 State: NEW Time Left: 267
+PID: 14 Actual CPU Time (ms): 11 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 63 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 42 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 34 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 39 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 9 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 3 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 30 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 12 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 7 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 17 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+=============================================
+Getting Job from Queue
+ with PID 17
+Executing Current Job:  PID: 17 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 267
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 14 Actual CPU Time (ms): 11 Desired CPU Time (ms): 458 State: HALTED Time Left: 358
+PID: 5 Actual CPU Time (ms): 63 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 42 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 34 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 39 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 9 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 3 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 30 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 12 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 7 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 17 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 6 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+=============================================
+Getting Job from Queue
+ with PID 14
+Executing Current Job:  PID: 14 State: RUNNING Actual CPU Time (ms): 11 Desired CPU Time (ms): 458
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 64 Desired CPU Time (ms): 727 State: HALTED Time Left: 127
+PID: 8 Actual CPU Time (ms): 43 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 35 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 40 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 10 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 4 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 31 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 13 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 8 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 18 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 7 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 12 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 64 Desired CPU Time (ms): 727
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 43 Desired CPU Time (ms): 649 State: HALTED Time Left: 149
+PID: 10 Actual CPU Time (ms): 35 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 40 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 10 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 4 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 31 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 13 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 8 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 18 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 7 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 12 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 64 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 43 Desired CPU Time (ms): 649
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 36 Desired CPU Time (ms): 940 State: HALTED Time Left: 440
+PID: 9 Actual CPU Time (ms): 41 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 11 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 5 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 32 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 14 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 9 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 19 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 8 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 13 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 65 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 44 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 36 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 42 Desired CPU Time (ms): 678 State: HALTED Time Left: 178
+PID: 15 Actual CPU Time (ms): 12 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 6 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 33 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 15 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 10 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 20 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 9 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 14 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 66 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 45 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 37 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 42 Desired CPU Time (ms): 678
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 12 Desired CPU Time (ms): 897 State: HALTED Time Left: 797
+PID: 18 Actual CPU Time (ms): 6 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 33 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 15 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 10 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 20 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 9 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 14 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 66 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 45 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 37 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 42 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 897
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 18 Actual CPU Time (ms): 7 Desired CPU Time (ms): 120 State: NEW Time Left: 120
+PID: 11 Actual CPU Time (ms): 34 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 16 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 11 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 21 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 10 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 15 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 67 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 46 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 38 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 43 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 13 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+=============================================
+Getting Job from Queue
+ with PID 18
+Executing Current Job:  PID: 18 State: RUNNING Actual CPU Time (ms): 7 Desired CPU Time (ms): 120
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 11
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 11 Actual CPU Time (ms): 34 Desired CPU Time (ms): 545 State: HALTED Time Left: 45
+PID: 13 Actual CPU Time (ms): 16 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 11 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 21 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 10 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 15 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 67 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 46 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 38 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 43 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 13 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 7 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+=============================================
+Getting Job from Queue
+ with PID 11
+Executing Current Job:  PID: 11 State: RUNNING Actual CPU Time (ms): 34 Desired CPU Time (ms): 545
+Terminating Job with PID 11
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 17 Desired CPU Time (ms): 936 State: HALTED Time Left: 736
+PID: 16 Actual CPU Time (ms): 12 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 22 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 11 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 16 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 68 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 47 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 39 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 44 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 14 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 8 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 17 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 12 Desired CPU Time (ms): 542 State: WAITING Time Left: 542
+PID: 12 Actual CPU Time (ms): 22 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 11 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 16 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 68 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 47 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 39 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 44 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 14 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 8 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 17 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+=============================================
+Getting Job from Queue
+ with PID 16
+Allocating Job with PID 19 into Process List
+Scheduling new job with PID 19
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 542
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 12 Actual CPU Time (ms): 23 Desired CPU Time (ms): 568 State: HALTED Time Left: 268
+PID: 17 Actual CPU Time (ms): 12 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 17 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 69 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 48 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 40 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 45 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 15 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 9 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 18 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 1 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 13 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+=============================================
+Getting Job from Queue
+ with PID 12
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 23 Desired CPU Time (ms): 568
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 17 Actual CPU Time (ms): 12 Desired CPU Time (ms): 267 State: HALTED Time Left: 167
+PID: 14 Actual CPU Time (ms): 17 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 69 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 48 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 40 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 45 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 15 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 9 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 18 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 1 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 13 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 23 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+=============================================
+Getting Job from Queue
+ with PID 17
+Executing Current Job:  PID: 17 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 267
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 14 Actual CPU Time (ms): 18 Desired CPU Time (ms): 458 State: HALTED Time Left: 258
+PID: 5 Actual CPU Time (ms): 70 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 49 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 41 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 46 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 16 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 10 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 19 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 2 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 14 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 24 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 13 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+=============================================
+Getting Job from Queue
+ with PID 14
+Executing Current Job:  PID: 14 State: RUNNING Actual CPU Time (ms): 18 Desired CPU Time (ms): 458
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 5
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 5 Actual CPU Time (ms): 70 Desired CPU Time (ms): 727 State: HALTED Time Left: 27
+PID: 8 Actual CPU Time (ms): 49 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 41 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 46 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 16 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 10 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 19 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 2 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 14 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 24 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 13 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 18 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+=============================================
+Getting Job from Queue
+ with PID 5
+Executing Current Job:  PID: 5 State: RUNNING Actual CPU Time (ms): 70 Desired CPU Time (ms): 727
+Terminating Job with PID 5
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 8
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 8 Actual CPU Time (ms): 50 Desired CPU Time (ms): 649 State: HALTED Time Left: 49
+PID: 10 Actual CPU Time (ms): 42 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 47 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 17 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 11 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 20 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 3 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 15 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 25 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 14 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 19 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+=============================================
+Getting Job from Queue
+ with PID 8
+Executing Current Job:  PID: 8 State: RUNNING Actual CPU Time (ms): 50 Desired CPU Time (ms): 649
+Terminating Job with PID 8
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 42 Desired CPU Time (ms): 940 State: HALTED Time Left: 340
+PID: 9 Actual CPU Time (ms): 47 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 17 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 11 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 20 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 3 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 15 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 25 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 14 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 19 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 42 Desired CPU Time (ms): 940
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 9
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 9 Actual CPU Time (ms): 48 Desired CPU Time (ms): 678 State: HALTED Time Left: 78
+PID: 15 Actual CPU Time (ms): 18 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 12 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 21 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 4 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 16 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 26 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 15 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 20 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 43 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+=============================================
+Getting Job from Queue
+ with PID 9
+Executing Current Job:  PID: 9 State: RUNNING Actual CPU Time (ms): 48 Desired CPU Time (ms): 678
+Terminating Job with PID 9
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 18 Desired CPU Time (ms): 897 State: WAITING Time Left: 797
+PID: 18 Actual CPU Time (ms): 12 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 21 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 4 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 16 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 26 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 15 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 20 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 43 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+=============================================
+Getting Job from Queue
+ with PID 15
+Process with PID 15 has finished IO
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 18 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+PID: 18
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 18 Actual CPU Time (ms): 12 Desired CPU Time (ms): 120 State: HALTED Time Left: 20
+PID: 13 Actual CPU Time (ms): 21 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 4 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 17 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 27 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 16 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 21 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 44 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 19 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+=============================================
+Getting Job from Queue
+ with PID 18
+Executing Current Job:  PID: 18 State: RUNNING Actual CPU Time (ms): 13 Desired CPU Time (ms): 120
+Terminating Job with PID 18
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 22 Desired CPU Time (ms): 936 State: HALTED Time Left: 636
+PID: 19 Actual CPU Time (ms): 5 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 17 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 27 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 16 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 21 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 44 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 19 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 22 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 19 Actual CPU Time (ms): 5 Desired CPU Time (ms): 442 State: NEW Time Left: 442
+PID: 16 Actual CPU Time (ms): 17 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 27 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 16 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 21 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 44 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 19 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 22 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+=============================================
+Getting Job from Queue
+ with PID 19
+Executing Current Job:  PID: 19 State: RUNNING Actual CPU Time (ms): 5 Desired CPU Time (ms): 442
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 18 Desired CPU Time (ms): 542 State: HALTED Time Left: 442
+PID: 12 Actual CPU Time (ms): 28 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 17 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 22 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 45 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 20 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 23 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 6 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 18 Desired CPU Time (ms): 542
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 12 Actual CPU Time (ms): 28 Desired CPU Time (ms): 568 State: HALTED Time Left: 168
+PID: 17 Actual CPU Time (ms): 17 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 22 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 45 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 20 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 23 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 6 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 18 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+=============================================
+Getting Job from Queue
+ with PID 12
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 28 Desired CPU Time (ms): 568
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 17
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 17 Actual CPU Time (ms): 17 Desired CPU Time (ms): 267 State: HALTED Time Left: 67
+PID: 14 Actual CPU Time (ms): 22 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 45 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 21 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 24 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 7 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 19 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 29 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+=============================================
+Getting Job from Queue
+ with PID 17
+Executing Current Job:  PID: 17 State: RUNNING Actual CPU Time (ms): 18 Desired CPU Time (ms): 267
+Terminating Job with PID 17
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 14 Actual CPU Time (ms): 23 Desired CPU Time (ms): 458 State: HALTED Time Left: 158
+PID: 10 Actual CPU Time (ms): 46 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 21 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 24 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 7 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 19 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 29 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+=============================================
+Getting Job from Queue
+ with PID 14
+Executing Current Job:  PID: 14 State: RUNNING Actual CPU Time (ms): 23 Desired CPU Time (ms): 458
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 46 Desired CPU Time (ms): 940 State: WAITING Time Left: 340
+PID: 15 Actual CPU Time (ms): 21 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 24 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 7 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 19 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 29 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+PID: 14 Actual CPU Time (ms): 23 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+=============================================
+Getting Job from Queue
+ with PID 10
+Process with PID 10 has finished IO
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 46 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 22 Desired CPU Time (ms): 897 State: HALTED Time Left: 697
+PID: 13 Actual CPU Time (ms): 25 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 8 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 20 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 30 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+PID: 14 Actual CPU Time (ms): 24 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+PID: 10 Actual CPU Time (ms): 47 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 22 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 25 Desired CPU Time (ms): 936 State: HALTED Time Left: 536
+PID: 19 Actual CPU Time (ms): 8 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 20 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 30 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+PID: 14 Actual CPU Time (ms): 24 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+PID: 10 Actual CPU Time (ms): 47 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+PID: 15 Actual CPU Time (ms): 22 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 25 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 19 Actual CPU Time (ms): 8 Desired CPU Time (ms): 442 State: HALTED Time Left: 342
+PID: 16 Actual CPU Time (ms): 20 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 30 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+PID: 14 Actual CPU Time (ms): 24 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+PID: 10 Actual CPU Time (ms): 47 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+PID: 15 Actual CPU Time (ms): 22 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+PID: 13 Actual CPU Time (ms): 25 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+=============================================
+Getting Job from Queue
+ with PID 19
+Executing Current Job:  PID: 19 State: RUNNING Actual CPU Time (ms): 8 Desired CPU Time (ms): 442
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 21 Desired CPU Time (ms): 542 State: HALTED Time Left: 342
+PID: 12 Actual CPU Time (ms): 31 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+PID: 14 Actual CPU Time (ms): 25 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+PID: 10 Actual CPU Time (ms): 48 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+PID: 15 Actual CPU Time (ms): 23 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+PID: 13 Actual CPU Time (ms): 26 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+PID: 19 Actual CPU Time (ms): 9 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 21 Desired CPU Time (ms): 542
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 12
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 12 Actual CPU Time (ms): 31 Desired CPU Time (ms): 568 State: HALTED Time Left: 68
+PID: 14 Actual CPU Time (ms): 25 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+PID: 10 Actual CPU Time (ms): 48 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+PID: 15 Actual CPU Time (ms): 23 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+PID: 13 Actual CPU Time (ms): 26 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+PID: 19 Actual CPU Time (ms): 9 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+PID: 16 Actual CPU Time (ms): 21 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+=============================================
+Getting Job from Queue
+ with PID 12
+Executing Current Job:  PID: 12 State: RUNNING Actual CPU Time (ms): 31 Desired CPU Time (ms): 568
+Terminating Job with PID 12
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 14
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 14 Actual CPU Time (ms): 25 Desired CPU Time (ms): 458 State: HALTED Time Left: 58
+PID: 10 Actual CPU Time (ms): 48 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+PID: 15 Actual CPU Time (ms): 23 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+PID: 13 Actual CPU Time (ms): 26 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+PID: 19 Actual CPU Time (ms): 9 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+PID: 16 Actual CPU Time (ms): 21 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+=============================================
+Getting Job from Queue
+ with PID 14
+Executing Current Job:  PID: 14 State: RUNNING Actual CPU Time (ms): 26 Desired CPU Time (ms): 458
+Terminating Job with PID 14
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 49 Desired CPU Time (ms): 940 State: HALTED Time Left: 240
+PID: 15 Actual CPU Time (ms): 24 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+PID: 13 Actual CPU Time (ms): 27 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+PID: 19 Actual CPU Time (ms): 10 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+PID: 16 Actual CPU Time (ms): 22 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+=============================================
+Getting Job from Queue
+ with PID 10
+Allocating Job with PID 20 into Process List
+Scheduling new job with PID 20
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 49 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 24 Desired CPU Time (ms): 897 State: HALTED Time Left: 597
+PID: 13 Actual CPU Time (ms): 27 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+PID: 19 Actual CPU Time (ms): 10 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+PID: 16 Actual CPU Time (ms): 22 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+PID: 20 Actual CPU Time (ms): 0 Desired CPU Time (ms): 689 State: NEW Time Left: 689
+PID: 10 Actual CPU Time (ms): 49 Desired CPU Time (ms): 940 State: HALTED Time Left: 140
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 24 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 27 Desired CPU Time (ms): 936 State: HALTED Time Left: 436
+PID: 19 Actual CPU Time (ms): 10 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+PID: 16 Actual CPU Time (ms): 22 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+PID: 20 Actual CPU Time (ms): 0 Desired CPU Time (ms): 689 State: NEW Time Left: 689
+PID: 10 Actual CPU Time (ms): 49 Desired CPU Time (ms): 940 State: HALTED Time Left: 140
+PID: 15 Actual CPU Time (ms): 24 Desired CPU Time (ms): 897 State: HALTED Time Left: 497
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 28 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 19 Actual CPU Time (ms): 11 Desired CPU Time (ms): 442 State: HALTED Time Left: 242
+PID: 16 Actual CPU Time (ms): 23 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+PID: 20 Actual CPU Time (ms): 1 Desired CPU Time (ms): 689 State: NEW Time Left: 689
+PID: 10 Actual CPU Time (ms): 50 Desired CPU Time (ms): 940 State: HALTED Time Left: 140
+PID: 15 Actual CPU Time (ms): 25 Desired CPU Time (ms): 897 State: HALTED Time Left: 497
+PID: 13 Actual CPU Time (ms): 28 Desired CPU Time (ms): 936 State: HALTED Time Left: 336
+=============================================
+Getting Job from Queue
+ with PID 19
+Executing Current Job:  PID: 19 State: RUNNING Actual CPU Time (ms): 11 Desired CPU Time (ms): 442
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 23 Desired CPU Time (ms): 542 State: WAITING Time Left: 342
+PID: 20 Actual CPU Time (ms): 1 Desired CPU Time (ms): 689 State: NEW Time Left: 689
+PID: 10 Actual CPU Time (ms): 50 Desired CPU Time (ms): 940 State: HALTED Time Left: 140
+PID: 15 Actual CPU Time (ms): 25 Desired CPU Time (ms): 897 State: HALTED Time Left: 497
+PID: 13 Actual CPU Time (ms): 28 Desired CPU Time (ms): 936 State: HALTED Time Left: 336
+PID: 19 Actual CPU Time (ms): 11 Desired CPU Time (ms): 442 State: HALTED Time Left: 142
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 23 Desired CPU Time (ms): 542
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 1 Desired CPU Time (ms): 689 State: NEW Time Left: 689
+PID: 10 Actual CPU Time (ms): 50 Desired CPU Time (ms): 940 State: HALTED Time Left: 140
+PID: 15 Actual CPU Time (ms): 25 Desired CPU Time (ms): 897 State: HALTED Time Left: 497
+PID: 13 Actual CPU Time (ms): 28 Desired CPU Time (ms): 936 State: HALTED Time Left: 336
+PID: 19 Actual CPU Time (ms): 11 Desired CPU Time (ms): 442 State: HALTED Time Left: 142
+PID: 16 Actual CPU Time (ms): 24 Desired CPU Time (ms): 542 State: HALTED Time Left: 242
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 2 Desired CPU Time (ms): 689
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 51 Desired CPU Time (ms): 940 State: HALTED Time Left: 140
+PID: 15 Actual CPU Time (ms): 26 Desired CPU Time (ms): 897 State: HALTED Time Left: 497
+PID: 13 Actual CPU Time (ms): 29 Desired CPU Time (ms): 936 State: HALTED Time Left: 336
+PID: 19 Actual CPU Time (ms): 12 Desired CPU Time (ms): 442 State: HALTED Time Left: 142
+PID: 16 Actual CPU Time (ms): 24 Desired CPU Time (ms): 542 State: HALTED Time Left: 242
+PID: 20 Actual CPU Time (ms): 2 Desired CPU Time (ms): 689 State: HALTED Time Left: 589
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 51 Desired CPU Time (ms): 940
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 26 Desired CPU Time (ms): 897 State: HALTED Time Left: 497
+PID: 13 Actual CPU Time (ms): 29 Desired CPU Time (ms): 936 State: HALTED Time Left: 336
+PID: 19 Actual CPU Time (ms): 12 Desired CPU Time (ms): 442 State: HALTED Time Left: 142
+PID: 16 Actual CPU Time (ms): 24 Desired CPU Time (ms): 542 State: HALTED Time Left: 242
+PID: 20 Actual CPU Time (ms): 2 Desired CPU Time (ms): 689 State: HALTED Time Left: 589
+PID: 10 Actual CPU Time (ms): 51 Desired CPU Time (ms): 940 State: HALTED Time Left: 40
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 26 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 29 Desired CPU Time (ms): 936 State: HALTED Time Left: 336
+PID: 19 Actual CPU Time (ms): 12 Desired CPU Time (ms): 442 State: HALTED Time Left: 142
+PID: 16 Actual CPU Time (ms): 24 Desired CPU Time (ms): 542 State: HALTED Time Left: 242
+PID: 20 Actual CPU Time (ms): 2 Desired CPU Time (ms): 689 State: HALTED Time Left: 589
+PID: 10 Actual CPU Time (ms): 51 Desired CPU Time (ms): 940 State: HALTED Time Left: 40
+PID: 15 Actual CPU Time (ms): 27 Desired CPU Time (ms): 897 State: HALTED Time Left: 397
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 30 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 19 Actual CPU Time (ms): 13 Desired CPU Time (ms): 442 State: HALTED Time Left: 142
+PID: 16 Actual CPU Time (ms): 25 Desired CPU Time (ms): 542 State: HALTED Time Left: 242
+PID: 20 Actual CPU Time (ms): 5 Desired CPU Time (ms): 689 State: HALTED Time Left: 589
+PID: 10 Actual CPU Time (ms): 54 Desired CPU Time (ms): 940 State: HALTED Time Left: 40
+PID: 15 Actual CPU Time (ms): 29 Desired CPU Time (ms): 897 State: HALTED Time Left: 397
+PID: 13 Actual CPU Time (ms): 32 Desired CPU Time (ms): 936 State: HALTED Time Left: 236
+=============================================
+Getting Job from Queue
+ with PID 19
+Allocating Job with PID 21 into Process List
+Scheduling new job with PID 21
+Executing Current Job:  PID: 19 State: RUNNING Actual CPU Time (ms): 15 Desired CPU Time (ms): 442
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 21
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 27 Desired CPU Time (ms): 542 State: HALTED Time Left: 242
+PID: 20 Actual CPU Time (ms): 5 Desired CPU Time (ms): 689 State: HALTED Time Left: 589
+PID: 10 Actual CPU Time (ms): 54 Desired CPU Time (ms): 940 State: HALTED Time Left: 40
+PID: 15 Actual CPU Time (ms): 29 Desired CPU Time (ms): 897 State: HALTED Time Left: 397
+PID: 13 Actual CPU Time (ms): 32 Desired CPU Time (ms): 936 State: HALTED Time Left: 236
+PID: 21 Actual CPU Time (ms): 0 Desired CPU Time (ms): 91 State: NEW Time Left: 91
+PID: 19 Actual CPU Time (ms): 15 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 27 Desired CPU Time (ms): 542
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 21
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 5 Desired CPU Time (ms): 689 State: HALTED Time Left: 589
+PID: 10 Actual CPU Time (ms): 54 Desired CPU Time (ms): 940 State: HALTED Time Left: 40
+PID: 15 Actual CPU Time (ms): 29 Desired CPU Time (ms): 897 State: HALTED Time Left: 397
+PID: 13 Actual CPU Time (ms): 32 Desired CPU Time (ms): 936 State: HALTED Time Left: 236
+PID: 21 Actual CPU Time (ms): 0 Desired CPU Time (ms): 91 State: NEW Time Left: 91
+PID: 19 Actual CPU Time (ms): 15 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+PID: 16 Actual CPU Time (ms): 27 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 6 Desired CPU Time (ms): 689
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 10
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 21
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 10 Actual CPU Time (ms): 55 Desired CPU Time (ms): 940 State: HALTED Time Left: 40
+PID: 15 Actual CPU Time (ms): 30 Desired CPU Time (ms): 897 State: HALTED Time Left: 397
+PID: 13 Actual CPU Time (ms): 33 Desired CPU Time (ms): 936 State: HALTED Time Left: 236
+PID: 21 Actual CPU Time (ms): 1 Desired CPU Time (ms): 91 State: NEW Time Left: 91
+PID: 19 Actual CPU Time (ms): 16 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+PID: 16 Actual CPU Time (ms): 28 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+PID: 20 Actual CPU Time (ms): 6 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+=============================================
+Getting Job from Queue
+ with PID 10
+Executing Current Job:  PID: 10 State: RUNNING Actual CPU Time (ms): 55 Desired CPU Time (ms): 940
+Terminating Job with PID 10
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 21
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 30 Desired CPU Time (ms): 897 State: HALTED Time Left: 397
+PID: 13 Actual CPU Time (ms): 33 Desired CPU Time (ms): 936 State: HALTED Time Left: 236
+PID: 21 Actual CPU Time (ms): 1 Desired CPU Time (ms): 91 State: NEW Time Left: 91
+PID: 19 Actual CPU Time (ms): 16 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+PID: 16 Actual CPU Time (ms): 28 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+PID: 20 Actual CPU Time (ms): 6 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 30 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 21
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 34 Desired CPU Time (ms): 936 State: HALTED Time Left: 236
+PID: 21 Actual CPU Time (ms): 2 Desired CPU Time (ms): 91 State: NEW Time Left: 91
+PID: 19 Actual CPU Time (ms): 17 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+PID: 16 Actual CPU Time (ms): 29 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+PID: 20 Actual CPU Time (ms): 7 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+PID: 15 Actual CPU Time (ms): 31 Desired CPU Time (ms): 897 State: HALTED Time Left: 297
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 34 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 21
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 21 Actual CPU Time (ms): 2 Desired CPU Time (ms): 91 State: NEW Time Left: 91
+PID: 19 Actual CPU Time (ms): 17 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+PID: 16 Actual CPU Time (ms): 29 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+PID: 20 Actual CPU Time (ms): 7 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+PID: 15 Actual CPU Time (ms): 32 Desired CPU Time (ms): 897 State: HALTED Time Left: 297
+PID: 13 Actual CPU Time (ms): 35 Desired CPU Time (ms): 936 State: HALTED Time Left: 136
+=============================================
+Getting Job from Queue
+ with PID 21
+Executing Current Job:  PID: 21 State: RUNNING Actual CPU Time (ms): 3 Desired CPU Time (ms): 91
+Terminating Job with PID 21
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 19
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 19 Actual CPU Time (ms): 18 Desired CPU Time (ms): 442 State: HALTED Time Left: 42
+PID: 16 Actual CPU Time (ms): 30 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+PID: 20 Actual CPU Time (ms): 8 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+PID: 15 Actual CPU Time (ms): 32 Desired CPU Time (ms): 897 State: HALTED Time Left: 297
+PID: 13 Actual CPU Time (ms): 35 Desired CPU Time (ms): 936 State: HALTED Time Left: 136
+=============================================
+Getting Job from Queue
+ with PID 19
+Executing Current Job:  PID: 19 State: RUNNING Actual CPU Time (ms): 19 Desired CPU Time (ms): 442
+Terminating Job with PID 19
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 31 Desired CPU Time (ms): 542 State: HALTED Time Left: 142
+PID: 20 Actual CPU Time (ms): 9 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+PID: 15 Actual CPU Time (ms): 33 Desired CPU Time (ms): 897 State: HALTED Time Left: 297
+PID: 13 Actual CPU Time (ms): 36 Desired CPU Time (ms): 936 State: HALTED Time Left: 136
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 32 Desired CPU Time (ms): 542
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 10 Desired CPU Time (ms): 689 State: HALTED Time Left: 489
+PID: 15 Actual CPU Time (ms): 34 Desired CPU Time (ms): 897 State: HALTED Time Left: 297
+PID: 13 Actual CPU Time (ms): 37 Desired CPU Time (ms): 936 State: HALTED Time Left: 136
+PID: 16 Actual CPU Time (ms): 32 Desired CPU Time (ms): 542 State: HALTED Time Left: 42
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 10 Desired CPU Time (ms): 689
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 34 Desired CPU Time (ms): 897 State: HALTED Time Left: 297
+PID: 13 Actual CPU Time (ms): 37 Desired CPU Time (ms): 936 State: HALTED Time Left: 136
+PID: 16 Actual CPU Time (ms): 32 Desired CPU Time (ms): 542 State: HALTED Time Left: 42
+PID: 20 Actual CPU Time (ms): 10 Desired CPU Time (ms): 689 State: HALTED Time Left: 389
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 34 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 37 Desired CPU Time (ms): 936 State: HALTED Time Left: 136
+PID: 16 Actual CPU Time (ms): 32 Desired CPU Time (ms): 542 State: HALTED Time Left: 42
+PID: 20 Actual CPU Time (ms): 10 Desired CPU Time (ms): 689 State: HALTED Time Left: 389
+PID: 15 Actual CPU Time (ms): 34 Desired CPU Time (ms): 897 State: HALTED Time Left: 197
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 37 Desired CPU Time (ms): 936
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 16
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 16 Actual CPU Time (ms): 33 Desired CPU Time (ms): 542 State: HALTED Time Left: 42
+PID: 20 Actual CPU Time (ms): 11 Desired CPU Time (ms): 689 State: HALTED Time Left: 389
+PID: 15 Actual CPU Time (ms): 35 Desired CPU Time (ms): 897 State: HALTED Time Left: 197
+PID: 13 Actual CPU Time (ms): 38 Desired CPU Time (ms): 936 State: HALTED Time Left: 36
+=============================================
+Getting Job from Queue
+ with PID 16
+Executing Current Job:  PID: 16 State: RUNNING Actual CPU Time (ms): 33 Desired CPU Time (ms): 542
+Terminating Job with PID 16
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 11 Desired CPU Time (ms): 689 State: HALTED Time Left: 389
+PID: 15 Actual CPU Time (ms): 35 Desired CPU Time (ms): 897 State: HALTED Time Left: 197
+PID: 13 Actual CPU Time (ms): 38 Desired CPU Time (ms): 936 State: HALTED Time Left: 36
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 11 Desired CPU Time (ms): 689
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 35 Desired CPU Time (ms): 897 State: HALTED Time Left: 197
+PID: 13 Actual CPU Time (ms): 38 Desired CPU Time (ms): 936 State: HALTED Time Left: 36
+PID: 20 Actual CPU Time (ms): 11 Desired CPU Time (ms): 689 State: HALTED Time Left: 289
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 35 Desired CPU Time (ms): 897
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 13
+PID: 15
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 13 Actual CPU Time (ms): 38 Desired CPU Time (ms): 936 State: HALTED Time Left: 36
+PID: 20 Actual CPU Time (ms): 11 Desired CPU Time (ms): 689 State: HALTED Time Left: 289
+PID: 15 Actual CPU Time (ms): 35 Desired CPU Time (ms): 897 State: HALTED Time Left: 97
+=============================================
+Getting Job from Queue
+ with PID 13
+Executing Current Job:  PID: 13 State: RUNNING Actual CPU Time (ms): 38 Desired CPU Time (ms): 936
+Terminating Job with PID 13
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 15
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 12 Desired CPU Time (ms): 689 State: HALTED Time Left: 289
+PID: 15 Actual CPU Time (ms): 36 Desired CPU Time (ms): 897 State: HALTED Time Left: 97
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 689
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 15
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 15 Actual CPU Time (ms): 36 Desired CPU Time (ms): 897 State: HALTED Time Left: 97
+PID: 20 Actual CPU Time (ms): 12 Desired CPU Time (ms): 689 State: HALTED Time Left: 189
+=============================================
+Getting Job from Queue
+ with PID 15
+Executing Current Job:  PID: 15 State: RUNNING Actual CPU Time (ms): 36 Desired CPU Time (ms): 897
+Terminating Job with PID 15
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 12 Desired CPU Time (ms): 689 State: HALTED Time Left: 189
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 689
+Current job needs to perform IO. Returning control to CPU
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 12 Desired CPU Time (ms): 689 State: WAITING Time Left: 189
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 12 Desired CPU Time (ms): 689
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+PID: 20
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+PID: 20 Actual CPU Time (ms): 12 Desired CPU Time (ms): 689 State: HALTED Time Left: 89
+=============================================
+Getting Job from Queue
+ with PID 20
+Executing Current Job:  PID: 20 State: RUNNING Actual CPU Time (ms): 13 Desired CPU Time (ms): 689
+Terminating Job with PID 20
+Current State of the CPU: 
+________________________________________
+CPU Process List:
+________________________________________
+Current State of the Process Queue:
+Scheduler using RoundRobinQueue Type Queue Structure
+Time Quantum: 100
+Printing Queue:
+Empty Queue
+=============================================
+Getting Job from Queue
+No More Jobs on Queue. Exiting Simulation
+
+CPU Statistics:
+========================================================
+PID: 0	| Turn Around Time Of: 103	| Waiting Time: 47	|
+PID: 1	| Turn Around Time Of: 79	| Waiting Time: 37	|
+PID: 2	| Turn Around Time Of: 84	| Waiting Time: 39	|
+PID: 3	| Turn Around Time Of: 126	| Waiting Time: 60	|
+PID: 4	| Turn Around Time Of: 118	| Waiting Time: 56	|
+PID: 5	| Turn Around Time Of: 147	| Waiting Time: 70	|
+PID: 6	| Turn Around Time Of: 46	| Waiting Time: 19	|
+PID: 7	| Turn Around Time Of: 50	| Waiting Time: 20	|
+PID: 8	| Turn Around Time Of: 127	| Waiting Time: 71	|
+PID: 9	| Turn Around Time Of: 126	| Waiting Time: 72	|
+PID: 10	| Turn Around Time Of: 148	| Waiting Time: 84	|
+PID: 11	| Turn Around Time Of: 108	| Waiting Time: 67	|
+PID: 12	| Turn Around Time Of: 113	| Waiting Time: 77	|
+PID: 13	| Turn Around Time Of: 131	| Waiting Time: 89	|
+PID: 14	| Turn Around Time Of: 109	| Waiting Time: 78	|
+PID: 15	| Turn Around Time Of: 132	| Waiting Time: 90	|
+PID: 16	| Turn Around Time Of: 128	| Waiting Time: 89	|
+PID: 17	| Turn Around Time Of: 99	| Waiting Time: 75	|
+PID: 18	| Turn Around Time Of: 93	| Waiting Time: 73	|
+PID: 19	| Turn Around Time Of: 111	| Waiting Time: 87	|
+PID: 20	| Turn Around Time Of: 106	| Waiting Time: 91	|
+PID: 21	| Turn Around Time Of: 92	| Waiting Time: 86	|
+========================================================
+Averages:
+Turn Around:  113
+Waiting Time: 70
+========================================================
