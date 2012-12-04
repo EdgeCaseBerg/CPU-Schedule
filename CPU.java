@@ -14,6 +14,7 @@ public class CPU{
 
 	long startingTime;
 
+
 	/*
 	*List of current processes in Memory. Visible to all
 	*/
