@@ -12,6 +12,16 @@ public class Driver{
 					+"Enter 4 for Priorty Queue CPU Simulation (Preemptive)\n"
 					+"Enter 5 for Round Robin CPU Simulation";
 
+	boolean confusion = false;
+
+	public void loop(){
+		while(handleOption(getOption())){
+			//If they didn't enter a proper command then they are confused, ask again.
+			if(confusion){continue;}
+
+		}
+	}
+
 	public String getCPUType(){
 		return JOptionPane.showInputDialog(null,commands,JOptionPane.QUESTION_MESSAGE);
 	}
