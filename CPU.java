@@ -174,13 +174,13 @@ public class CPU{
 					System.out.println("Current job needs to perform IO. Returning control to CPU");
 					currentJob.doIO();
 					//Remove execution time from waiting time
-					waitingTime.put(currentJob.getPID(), System.currentTimeMillis() - waitingTime.get(currentJob.getPID()));
+					waitingTime.put(currentJob.getPID(), waitingTime.get(currentJob.getPID()) - (System.currentTimeMillis() - waitingTime.get(currentJob.getPID())));
 					//Return control to CPU
 					return;			
 				}
 			}
 			//Remove execution time from the process
-			waitingTime.put(currentJob.getPID(), System.currentTimeMillis() - waitingTime.get(currentJob.getPID()));
+			waitingTime.put(currentJob.getPID(), waitingTime.get(currentJob.getPID()) - (System.currentTimeMillis() - waitingTime.get(currentJob.getPID())));
 			//Execution of program is done
 			currentJob.changeStateTo(State.TERMINATED);
 		}
@@ -295,6 +295,9 @@ public class CPU{
 			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + (cpuTime.get(i)+waitingTime.get(i)+responseTime.get(i)) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
 			avgTurn += cpuTime.get(i) + waitingTime.get(i) + responseTime.get(i);
 			avgWait += waitingTime.get(i);	
+			System.out.println("DEBUG " + cpuTime.get(i));
+			System.out.println("DEBUG " + waitingTime.get(i));
+			System.out.println("DEBUG " + responseTime.get(i));
 		}
 
 		System.out.println("========================================================");
