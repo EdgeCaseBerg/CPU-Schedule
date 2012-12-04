@@ -62,6 +62,8 @@ public class Driver{
 			enter.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e){
 					entry();
+					info.setText(commands);
+					info.revalidate();
 				}
 			});
 			enter.setMnemonic(KeyEvent.VK_ENTER);
@@ -118,13 +120,21 @@ public class Driver{
 				if(step==0){
 					step++;
 					info.setText(commands);
+					info.invalidate();
 				}else{
 					step=0;
 					info.setText(option);
 					info.invalidate();
+
 				}
+			}else{
+				step = 0;
+				info.setText(option);
+				info.invalidate();
 			}
+			pane.setCaretPosition(0);
 			input.setText("");
+			info.updateUI();
 		}
 
 		@Override
@@ -163,7 +173,9 @@ public class Driver{
 
 			}else{
 				//They failed
+				System.out.println("CLEARTHISTEXT");
 				System.out.println("Incorrect Command");
+
 			}
 		}
 		return false;
