@@ -22,8 +22,9 @@ public class CPU{
 	/**
 	*Statistics
 	*/
-	public static HashMap<Integer,Long> turnAround = new HashMap<Integer,Long>();
+	public static HashMap<Integer,Long> cpuTime = new HashMap<Integer,Long>();
 	public static HashMap<Integer,Long> waitingTime = new HashMap<Integer,Long>();
+	public static HashMap<Integer,Long> responseTime = new HashMap<Integer,Long>();
 
 	/**
 	*The current process being executed 
@@ -114,7 +115,8 @@ public class CPU{
 	public void freeJob(int PID){
 		//Save the stats for this process
 		//Turn around time is easy
-		turnAround.put(PID,System.currentTimeMillis() - currentJob.getStartTime() );
+		responseTime.put(PID,currentJob.getResponseTime());
+		cpuTime.put(PID,System.currentTimeMillis() - currentJob.getStartTime());
 		//Final computation of waiting time
 		waitingTime.put(PID,waitingTime.get(PID) - startingTime);
 		processes.remove(PID);
@@ -250,8 +252,8 @@ public class CPU{
 							//It is higher! so we should preempt it!
 							System.out.println("Scheduling new job with PID " + p.PID + " with higher priority than current job. PreEmpting...");
 							jobScheduler.scheduleWithPriority(p,newJobPriority);
+							jobScheduler.setResponseTime(p.PID,System.currentTimeMillis(),startingTime);
 							jobScheduler.scheduleWithPriority(currentJob,currentJob.getSchedule());
-							
 							printStatus();
 							continue;
 						}else{
@@ -264,6 +266,7 @@ public class CPU{
 						System.out.println("Scheduling new job with PID " + p.PID);
 						jobScheduler.scheduleWithPriority(p,newJobPriority);
 					}
+					jobScheduler.setResponseTime(p.PID,System.currentTimeMillis(),startingTime);
 				}
 			}
 			//Actually execute the job
@@ -286,10 +289,14 @@ public class CPU{
 		long avgTurn = 0;
 		long avgWait = 0;
 		for(int i=0; i < nextPID; i++){
-			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + turnAround.get(i) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
-			avgTurn += turnAround.get(i);
+			System.out.println("PID: " + i + "\t| Turn Around Time Of: " + (cpuTime.get(i)+waitingTime.get(i)+responseTime.get(i)) + "\t| Waiting Time: " + waitingTime.get(i) + "\t|");
+			avgTurn += cpuTime.get(i) + waitingTime.get(i) + responseTime.get(i);
 			avgWait += waitingTime.get(i);
+			System.out.println("DEBUG CPU " + cpuTime.get(i));
+			System.out.println("DEBUG WAIT " + waitingTime.get(i) );
+			System.out.println("DEBUG RESPONSE " + responseTime.get(i));
 		}
+
 		System.out.println("========================================================");
 		System.out.println("Averages:");
 		System.out.println("Turn Around:  " + (avgTurn/(nextPID-1)));

@@ -135,6 +135,12 @@ public class Scheduler{
 
 	}
 
+	public void setResponseTime(int PID, long response, long cpuStartTime){
+		ProcessControlBlock pcb  = algorithm.find(PID);
+		pcb.setResponseTime((response) - (cpuStartTime - pcb.getStartTime()));
+		System.out.println("DEBUG " + pcb.getStartTime());
+
+	}
 
 
 
