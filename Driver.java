@@ -38,6 +38,7 @@ public class Driver{
 		JTextField input = new JTextField();
 		JButton enter = new JButton("Enter");
 		JButton quit = new JButton("Quit");
+		JButton doc = new JButton("Documentation");
 		JLabel info = new JLabel(option);
 
 		public ConsoleStream(OutputStream out){
@@ -47,6 +48,8 @@ public class Driver{
 			pane.setPreferredSize(new Dimension(550,100000));
 			pane.setEditable(false);
 			pane.setVisible(true);
+			pane.setWrapStyleWord(true);   
+ 			pane.setLineWrap(true);  
 
 			scroll = new JScrollPane(pane);
 			scroll.setPreferredSize(new Dimension(550,300));
@@ -80,6 +83,12 @@ public class Driver{
 				}
 			});
 
+			doc.addActionListener(new ActionListener(){
+				public void actionPerformed(ActionEvent e){
+					pane.setText(Documentation.doc);
+				}
+			});
+
 			input.setPreferredSize(new Dimension(200,20));
 			input.setText("Enter Commands Here");
 			input.requestFocus();
@@ -90,6 +99,7 @@ public class Driver{
 
 			commandPanel.add(input);
 			commandPanel.add(enter);
+			commandPanel.add(doc);
 			commandPanel.add(quit);
 
 			consoleOut.setTitle("Simulation Output");
